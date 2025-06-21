@@ -29,6 +29,15 @@ body {
   margin: 0.5rem 0;
 }
 
+.timeline-entry figure img {
+  max-width: 75%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
 /* Header */
 header {
   background-color: #800000; /* Deep red */
