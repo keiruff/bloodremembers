@@ -127,11 +127,14 @@ figcaption {
 
 /* Header */
 header {
-  background-image: url('images/heritage-pattern.jpg'); /* rename your saved image */
+  background-image: url('images/header-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 header h1 {
