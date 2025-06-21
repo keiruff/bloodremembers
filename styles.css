@@ -104,6 +104,12 @@ figcaption {
   margin-top: 0.5rem;
 }
 
+figcaption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 5px;
+}
+
 /* Header */
 header {
   background-color: #800000;
