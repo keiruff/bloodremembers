@@ -5,12 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Historical Timeline | Blood Remembers</title>
   <link rel="stylesheet" href="styles.css" />
+  
   <style>
     .timeline-container {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
+  position: relative;
+}
+
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  width: 4px;
+  background-color: #800000;
+}
 
     .timeline-intro {
       text-align: center;
