@@ -129,3 +129,10 @@ footer {
     padding: 1rem 0.5rem;
   }
 }
+main ul {
+  list-style-position: outside;
+  padding-left: 1.2rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  text-align: left;
+}
