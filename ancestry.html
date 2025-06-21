@@ -3,38 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Discover Your Ancestry</title>
+  <title>Discover Your Ancestry | Blood Remembers</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fffaf5;
-      color: #2c2c2c;
-    }
-    header {
-      background-color: #800000;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    main {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    h2 {
-      color: #800000;
-      margin-bottom: 1rem;
-    }
     .dna-links a {
       display: inline-block;
       background-color: #800000;
@@ -46,69 +17,71 @@
       font-weight: bold;
       transition: background-color 0.3s ease;
     }
+
     .dna-links a:hover {
       background-color: #a00000;
     }
+
     .testimonial {
       background-color: #f5f0ed;
       padding: 1rem;
       border-left: 4px solid #800000;
       margin-bottom: 1rem;
     }
+
     .faq-item {
       margin-bottom: 1rem;
     }
+
     .faq-item h4 {
       margin: 0.5rem 0;
       color: #4b2e2e;
     }
-    img {
-      max-width: 100%;
-      margin: 1rem 0;
-      border-radius: 10px;
-    }
+
     .visuals {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
     }
+
     .visuals div {
       text-align: center;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #555;
+
+    .visuals img {
+      width: 120px;
+      height: auto;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-<header>
-  <h1>The Blood Remembers</h1>
-  <p>Honoring the lives, histories, and legacies of the stolen and silenced</p>
-</header>
+  <header>
+    <h1>The Blood Remembers</h1>
+    <p>Honoring the lives, histories, and legacies of the stolen and silenced</p>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="timeline.html" class="active">Timeline</a>
-  <a href="reparations101.html">Reparations 101</a>
-  <a href="petition.html">Petition</a>
-</nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="reparations101.html">Reparations 101</a>
+    <a href="petition.html">Petition</a>
+    <a href="ancestry.html" class="active">Ancestry</a>
+  </nav>
 
   <main>
     <section>
-      <h1>Discover Your Ancestral Roots</h1>
+      <h2>Discover Your Ancestral Roots</h2>
       <p>Start your journey to reconnect with your lineage, heritage, and truth.</p>
       
-      <h2>Why It Matters</h2>
+      <h3>Why It Matters</h3>
       <p>Our DNA carries the stories of those who came before us. Taking an ancestry DNA test is a powerful step toward reclaiming identity, rebuilding connections, and restoring pride in our legacy.</p>
       <img src="https://images.unsplash.com/photo-1588776814546-f93c6eced3c9" alt="DNA heritage inspiration">
     </section>
 
     <section>
-      <h2>Top DNA Testing Services</h2>
+      <h3>Top DNA Testing Services</h3>
       <div class="dna-links">
         <a href="https://www.ancestry.com/dna/" target="_blank">AncestryDNA</a>
         <a href="https://www.23andme.com/" target="_blank">23andMe</a>
@@ -116,26 +89,26 @@
       </div>
     </section>
 
-    <section class="visual-connections" style="padding: 2rem;">
-  <h2 style="text-align: center; color: #800000;">Visual Connections</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-    <div style="text-align: center;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Benin_Bronze.jpg/800px-Benin_Bronze.jpg" alt="Benin Bronze" width="120">
-      <p>Benin Bronze</p>
-    </div>
-    <div style="text-align: center;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Mali_Empire_1350_-_English.svg/800px-Mali_Empire_1350_-_English.svg.png" alt="Mali Empire Map" width="120">
-      <p>Mali Empire Map</p>
-    </div>
-    <div style="text-align: center;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Kente_cloth.jpg/800px-Kente_cloth.jpg" alt="Kente Cloth" width="120">
-      <p>Kente Cloth</p>
-    </div>
-  </div>
-</section>
+    <section>
+      <h3 style="text-align: center;">Visual Connections</h3>
+      <div class="visuals">
+        <div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Benin_Bronze.jpg/800px-Benin_Bronze.jpg" alt="Benin Bronze">
+          <p>Benin Bronze</p>
+        </div>
+        <div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Mali_Empire_1350_-_English.svg/800px-Mali_Empire_1350_-_English.svg.png" alt="Mali Empire Map">
+          <p>Mali Empire Map</p>
+        </div>
+        <div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Kente_cloth.jpg/800px-Kente_cloth.jpg" alt="Kente Cloth">
+          <p>Kente Cloth</p>
+        </div>
+      </div>
+    </section>
 
     <section>
-      <h2>Testimonials</h2>
+      <h3>Testimonials</h3>
       <div class="testimonial">
         <p>"I always felt a disconnect until I found my roots in Nigeria and Cameroon. Knowing my heritage gave me a deeper sense of self." — Maya R.</p>
       </div>
@@ -145,7 +118,7 @@
     </section>
 
     <section>
-      <h2>Frequently Asked Questions</h2>
+      <h3>Frequently Asked Questions</h3>
       <div class="faq-item">
         <h4>Is ancestry DNA testing accurate?</h4>
         <p>DNA testing is highly accurate for identifying regional origins and connecting with potential relatives. The more specific the database (like African Ancestry), the deeper your insights.</p>
@@ -156,17 +129,4 @@
       </div>
       <div class="faq-item">
         <h4>Can I use this for reparations claims or dual citizenship?</h4>
-        <p>In some cases, yes. DNA evidence has been used in advocacy efforts and applications for ancestral reconnection in certain countries. Check the specific requirements involved.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Can I trace African heritage specifically?</h4>
-        <p>Yes. Services like <strong>African Ancestry</strong> specialize in identifying African ethnic groups and countries of origin.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Blood Remembers | All Rights Reserved
-  </footer>
-</body>
-</html>
+        <p>In some cases, yes. DNA evidence has been used in advocacy efforts and applications for ancestral reconnection
