@@ -2,36 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Timeline | Blood Remembers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historical Timeline | Blood Remembers</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .timeline-container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .timeline-intro {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+
+    .timeline-entry {
+      border-left: 4px solid #a00;
+      padding-left: 1.5rem;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+
+    .timeline-entry::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background-color: #a00;
+      border-radius: 50%;
+    }
+
+    .timeline-entry h3 {
+      margin: 0;
+      color: #a00;
+    }
+
+    .timeline-entry img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>The Blood Remembers</h1>
+    <p class="subtitle">A Timeline of African Greatness</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="reparations101.html">Reparations 101</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="petition.html">Petition</a>
+      <a href="ancestry.html">Ancestry</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>The Blood Remembers</h1>
-  <p>Honoring the lives, histories, and legacies of the stolen and silenced</p>
-</header>
+  <main class="timeline-container">
+    <p class="timeline-intro">
+      Africa's story is not one of darkness or deficit — it is one of empire, scholarship, architecture, trade, and resistance. The events below highlight a legacy of glory and the global consequences of its interruption.
+    </p>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="timeline.html" class="active">Timeline</a>
-  <a href="reparations101.html">Reparations 101</a>
-  <a href="petition.html">Petition</a>
-</nav>
+    <section class="timeline-entry">
+      <h3>c. 2400 BCE – Kingdom of Kush (Nubia)</h3>
+      <p>Located in what is now Sudan, Kush rivaled Ancient Egypt and ruled over it during the 25th Dynasty.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Meroe_Pyramids_Sudan_2001.jpg" alt="Pyramids of Kush, Meroë" />
+    </section>
 
-<main>
-  <section>
-    <h2>African Kingdoms Timeline</h2>
-    <p>This page will showcase a historical timeline from powerful empires such as Mali, Benin, Kush, Songhai, Great Zimbabwe, and more — all leading up to colonization and the transatlantic slave trade.</p>
-    <p>More content coming soon...</p>
-  </section>
-</main>
+    <section class="timeline-entry">
+      <h3>c. 700 CE – Ghana Empire</h3>
+      <p>One of the earliest great empires in West Africa, known for its wealth and control of gold and salt trade.</p>
+    </section>
 
+    <section class="timeline-entry">
+      <h3>c. 1235–1600 – Mali Empire</h3>
+      <p>Home to the legendary Mansa Musa, the wealthiest person in history, and the center of Islamic learning in Timbuktu.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Mansa_Musa_keita.jpg" alt="Mansa Musa depiction" />
+    </section>
+
+    <section class="timeline-entry">
+      <h3>c. 1464–1591 – Songhai Empire</h3>
+      <p>Known for its advanced administration and universities. Gao and Timbuktu were thriving centers of trade and learning.</p>
+    </section>
+
+    <section class="timeline-entry">
+      <h3>c. 1180–1897 – Kingdom of Benin</h3>
+      <p>Renowned for its sophisticated bronzework and complex urban planning. Destroyed during British colonization.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Benin_Bronze.jpg" alt="Benin Bronze plaque" />
+    </section>
+
+    <section class="timeline-entry">
+      <h3>c. 1100–1450 – Great Zimbabwe</h3>
+      <p>Stone city complex that housed thousands and engaged in extensive trade across the Indian Ocean.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Great_Zimbabwe_2.jpg" alt="Ruins of Great Zimbabwe" />
+    </section>
+
+    <section class="timeline-entry">
+      <h3>Late 1400s – Portuguese Contact</h3>
+      <p>The first European traders arrived on the West African coast, initiating centuries of exploitation and destabilization.</p>
+    </section>
+
+    <section class="timeline-entry">
+      <h3>1619 – First Enslaved Africans in English Colonies</h3>
+      <p>Arrival in Virginia marks the beginning of the transatlantic slave trade’s direct impact on what became the United States.</p>
+    </section>
+
+    <section class="timeline-entry">
+      <h3>1800s – Scramble for Africa</h3>
+      <p>European powers divided and colonized the continent, dismantling empires and exploiting people and resources.</p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Blood Remembers. All rights reserved.</p>
+    <p>&copy; 2025 The Blood Remembers. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
