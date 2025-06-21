@@ -214,6 +214,23 @@ a.button:hover {
   background-color: #a30000;
 }
 
+.button {
+  background-color: #800000;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #a00000;
+}
+
 /* Footer */
 footer {
   text-align: center;
