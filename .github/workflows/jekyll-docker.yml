@@ -1,15 +1,15 @@
-name: Build and Deploy Jekyll Site
+name: Deploy Jekyll site to GitHub Pages
 
 on:
   push:
     branches: [main]
 
 jobs:
-  build:
+  github-pages:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Ruby
@@ -17,13 +17,13 @@ jobs:
         with:
           ruby-version: '3.1'
 
-      - name: Install Jekyll and Bundler
+      - name: Install Jekyll and dependencies
         run: |
           gem install bundler jekyll
-          bundle install || true  # fallback if no Gemfile
+          bundle install || true
 
-      - name: Build site with Jekyll
-        run: JEKYLL_ENV=production jekyll build
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
