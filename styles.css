@@ -140,13 +140,13 @@ header {
 header h1 {
   font-size: 2.8rem;
   font-weight: bold;
-  color: #fff;
+  color: #e74c3c; /* Red */
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 header p {
   font-size: 1.2rem;
-  color: #eee;
+  color: #e74c3c; /* Red */
   margin-top: 1rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
