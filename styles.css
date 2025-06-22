@@ -81,6 +81,29 @@ nav a.active {
 }
 
 /* Main */
+.mission-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 850px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #800000;
+}
+
+.mission-box h2 {
+  margin-bottom: 1rem;
+  color: #800000;
+  font-size: 2rem;
+}
+
+.mission-box p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  color: #333;
+}
+
 main {
   max-width: 900px;
   margin: 2rem auto;
