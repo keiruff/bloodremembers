@@ -168,46 +168,54 @@ p {
 }
 
 /* Timeline */
-.timeline-container {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 10px;
+.image-timeline {
+  padding: 2rem 1rem;
+  background: linear-gradient(to bottom, #fff8f6, #f0eaea);
+  text-align: center;
 }
 
-.timeline-entry {
-  border-left: 4px solid #800000;
-  margin: 2rem 0;
-  padding-left: 1rem;
-  position: relative;
-}
-
-.timeline-entry h3 {
+.image-timeline h2 {
+  font-size: 2rem;
   color: #800000;
+  margin-bottom: 2rem;
+}
+
+.timeline-track {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.timeline-block {
+  width: 160px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.timeline-block:hover {
+  transform: scale(1.05);
+}
+
+.timeline-date {
   font-weight: bold;
+  color: #800000;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.timeline-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   margin-bottom: 0.5rem;
 }
 
-.timeline-entry figure {
-  margin: 1rem 0;
-  text-align: center;
-}
-
-.timeline-entry img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  display: block;
-  margin: 0 auto;
-}
-
-.timeline-entry figcaption {
-  font-size: 0.85rem;
-  font-style: italic;
-  color: #555;
-  margin-top: 0.5rem;
-  text-align: center;
+.timeline-block p {
+  font-size: 0.95rem;
+  color: #444;
 }
 
 /* Utilities */
