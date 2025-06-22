@@ -10,54 +10,103 @@ body {
   font-family: Arial, sans-serif;
   background-color: #fff8f6;
   color: #222;
-  margin: 0;
-  padding: 0;
 }
 
-.petition-points {
-  list-style: none;
-  padding-left: 0;
-  max-width: 600px;
-  margin: 0 auto;
+/* Header */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+              url('images/header-background.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  background-color: #444;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #800000;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #800000;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
-.petition-points li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0.5rem 0;
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
+/* Buttons */
+.cta-button,
+.button {
+  display: inline-block;
+  background-color: #800000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem auto;
+}
+
+.cta-button:hover,
+.button:hover {
+  background-color: #a30000;
+}
+
+/* Timeline */
 .timeline-container {
   max-width: 900px;
   margin: 2rem auto;
   padding: 1rem;
   background-color: #fff;
   border-radius: 10px;
-}
-
-.timeline-container h2 {
-  text-align: center;
-  color: #333;
-}
-
-.timeline-entry figure img {
-  max-width: 65%;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.timeline-event img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  display: block;
-  margin: 1rem auto;
 }
 
 .timeline-entry {
@@ -75,6 +124,7 @@ body {
 
 .timeline-entry figure {
   margin: 1rem 0;
+  text-align: center;
 }
 
 .timeline-entry img {
@@ -82,20 +132,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   display: block;
-}
-
-.timeline-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
   margin: 0 auto;
-  border-radius: 8px;
-}
-
-.standard-size {
-    width: 500px;
-    max-width: 90%;
-    height: auto;
 }
 
 .timeline-entry figcaption {
@@ -106,183 +143,21 @@ body {
   text-align: center;
 }
 
+/* Utilities */
+ul {
+  list-style-position: outside;
+  padding-left: 1.2rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  text-align: left;
+}
+
 .intro {
   text-align: center;
   font-style: italic;
   margin-bottom: 2rem;
 }
 
-figcaption {
-  font-size: 0.85rem;
-  font-style: italic;
-  color: #555;
-  margin-top: 0.5rem;
-}
-
-figcaption {
-  text-align: center;
-  font-style: italic;
-  margin-top: 5px;
-}
-
-/* Header */
-header {
-  position: relative;
-  background-image: url('images/slavetrade-map.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
-  text-align: center;
-  padding: 3rem 1rem;
-  z-index: 0;
-}
-
-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(173, 216, 230, 0.5); /* Light Blue Transparent
-  z-index: -1;
-}
-
-header h1 {
-  font-size: 2.8rem;
-  font-weight: bold;
-  color: #e74c3c; /* Red */
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #e74c3c; /* Red */
-  margin-top: 1rem;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-}
-
-/* Nav Bar */
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  background: #fff;
-  padding: 0.5rem;
-  border-bottom: 2px solid #ddd;
-}
-
-nav a {
-  padding: 0.5rem 0.75rem;
-  text-decoration: none;
-  font-weight: 500;
-  color: #333;
-  border-radius: 4px;
-  transition: background 0.2s, color 0.2s;
-}
-
-/* Active page indication */
-nav a.active {
-  background: #e53e3e; /* red theme */
-  color: white;
-}
-
-/* CTA (Call To Action) button style */
-nav a.cta-button {
-  background: #2b6cb0; /* blue theme */
-  color: white;
-}
-
-/* Hover states */
-nav a:hover {
-  background: #f0f0f0;
-  color: #000;
-}
-
-nav a.cta-button:hover {
-  background: #2c5282;
-  color: #fff;
-}
-
-/* Main Content */
-main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-.progress-container {
-  height: 300px;
-  width: 60px;
-  background-color: #eee;
-  border-radius: 30px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-}
-
-.progress-fill {
-  position: absolute;
-  bottom: 0;
-  height: 78.462%; /* Adjust dynamically or manually */
-  width: 100%;
-  background: linear-gradient(to top, #800000, #a00000);
-  border-radius: 30px 30px 0 0;
-  transition: height 0.5s ease-in-out;
-}
-
-/* Headings */
-h1, h2, h3 {
-  color: #800000;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-/* Text & Paragraphs */
-p {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-/* Buttons */
-.cta-button {
-  background-color: #800000;
-  color: white;
-  padding: 0.75em 1.5em;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  display: inline-block;
-  margin: 1rem auto;
-}
-
-.cta-button:hover,
-a.button:hover {
-  background-color: #a30000;
-}
-
-.button {
-  background-color: #800000;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #a00000;
-}
-
-/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -295,38 +170,28 @@ footer {
 /* Responsive */
 @media (max-width: 600px) {
   nav {
-  background: #333;
-  text-align: center;
-  padding: 1rem;
-}
+    flex-direction: column;
+    align-items: center;
+  }
 
   nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  background-color: #555;
-  border-radius: 5px;
-}
+    width: 100%;
+    margin: 0.25rem 0;
+    text-align: center;
+  }
 
-  nav a.active {
-  background-color: #800000;
-}
+  .cta-button,
+  .button {
+    width: 90%;
+    max-width: 300px;
+    padding: 0.75rem;
+  }
 
   main {
     padding: 1rem 0.5rem;
   }
-}
-main ul {
-  list-style-position: outside;
-  padding-left: 1.2rem;
-  margin: 1rem auto;
-  max-width: 700px;
-  text-align: left;
-}
-@media (max-width: 600px) {
+
   .standard-size {
     width: 100%;
   }
 }
-
