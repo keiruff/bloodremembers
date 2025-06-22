@@ -197,6 +197,26 @@ main {
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
+.progress-container {
+  height: 300px;
+  width: 60px;
+  background-color: #eee;
+  border-radius: 30px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  position: absolute;
+  bottom: 0;
+  height: 78.462%; /* Adjust dynamically or manually */
+  width: 100%;
+  background: linear-gradient(to top, #800000, #a00000);
+  border-radius: 30px 30px 0 0;
+  transition: height 0.5s ease-in-out;
+}
+
 /* Headings */
 h1, h2, h3 {
   color: #800000;
