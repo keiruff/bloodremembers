@@ -7,10 +7,29 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<!-- Subheader with Date and Weather -->
 <div class="subheader">
   <div class="subheader-left">Stay Informed</div>
   <div class="subheader-right" id="date-weather">Loading...</div>
 </div>
+
+<script>
+  // Simple Weather + Date without an API (static example)
+  document.addEventListener("DOMContentLoaded", () => {
+    const today = new Date();
+    const dateString = today.toLocaleDateString(undefined, {
+      weekday: 'short',
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    });
+
+    // You can manually update this part for now
+    const manualWeather = "Washington, DC — 78°F & Sunny";
+
+    document.getElementById("date-weather").textContent = `${dateString} | ${manualWeather}`;
+  });
+</script>
   <header>
     <h1>Blood Remembers</h1>
     <p>Honoring the lives, histories, and legacies of the stolen and silenced</p>
