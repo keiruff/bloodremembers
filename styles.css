@@ -12,6 +12,26 @@ body {
   color: #222;
 }
 
+/* Subheader */
+.subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #800000;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.subheader-left {
+  font-style: italic;
+}
+
+.subheader-right {
+  text-align: right;
+}
+
 /* Header */
 header {
   position: relative;
