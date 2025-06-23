@@ -217,12 +217,15 @@ p {
   text-align: center;
 }
 
-.timeline-entry img {
-  max-width: 100%;
+.timeline-block img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
 }
 
 .timeline-entry figcaption {
