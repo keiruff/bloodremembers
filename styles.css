@@ -17,25 +17,28 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #800000;
-  color: #fff;
-  padding: 0.4rem 1rem;
-  font-size: 0.9rem;
+  background-color: #eee;
+  color: #333;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  border-bottom: 1px solid #ccc;
   font-weight: 500;
 }
 
 .subheader-left {
-  font-style: italic;
+  flex: 1;
 }
 
 .subheader-right {
+  flex: 1;
   text-align: right;
 }
 
 /* Header */
 header {
   position: relative;
-  background: url('images/slavetrade-map.jpg') center/cover no-repeat;
+  background: url('images/slavemap.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 3rem 1rem;
@@ -49,7 +52,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(173, 216, 230, 0.5);
+  background: rgba(135, 206, 250, 0.4);
   z-index: -1;
 }
 
@@ -145,7 +148,7 @@ p {
   padding: 2rem 1.5rem;
   border-radius: 12px;
   margin: 2rem auto;
-  max-width: 700px;
+  max-width: 750px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   border-left: 6px solid #800000;
   animation: fadeIn 1.2s ease-in-out;
@@ -170,8 +173,8 @@ p {
 }
 
 .mission-box p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.7;
   text-align: center;
   color: #333;
 }
@@ -188,73 +191,46 @@ p {
 }
 
 /* Timeline */
-.image-timeline {
-  padding: 2rem 1rem;
-  background: linear-gradient(to bottom, #fff8f6, #f0eaea);
-  text-align: center;
+.timeline-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
-.image-timeline h2 {
-  font-size: 2rem;
-  color: #800000;
-  margin-bottom: 2rem;
-}
-
-.timeline-track {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.timeline-block {
-  width: 160px;
+.timeline-entry {
+  border-left: 4px solid #800000;
+  margin: 2rem 0;
+  padding-left: 1rem;
   position: relative;
-  text-align: center;
-  transition: transform 0.3s ease;
 }
 
-.timeline-block:hover {
-  transform: scale(1.05);
-}
-
-.timeline-date {
-  font-weight: bold;
+.timeline-entry h3 {
   color: #800000;
+  font-weight: bold;
   margin-bottom: 0.5rem;
-  display: block;
 }
 
-.timeline-block img {
-  width: 100%;
-  height: auto;
+.timeline-entry figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.timeline-entry img {
+  max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  margin-bottom: 0.5rem;
+  display: block;
+  margin: 0 auto;
 }
 
-.timeline-block p {
-  font-size: 0.95rem;
-  color: #444;
-}
-
-/* General styling for the container */
-.song-title-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-  font-family: 'Arial', sans-serif;
-}
-
-/* Styling for the song title */
-.song-title {
-  font-size: 3rem;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.timeline-entry figcaption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
   text-align: center;
-  margin: 0;
 }
 
 /* Utilities */
@@ -307,5 +283,15 @@ footer {
 
   .standard-size {
     width: 100%;
+  }
+
+  .subheader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subheader-right {
+    text-align: left;
+    margin-top: 0.5rem;
   }
 }
