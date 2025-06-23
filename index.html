@@ -16,7 +16,8 @@
 <script>
   async function loadWeatherAndDate() {
     const apiKey = '109b75b0d8d98125242a21b32a65f193'; // Replace with your actual API key
-    const city = 'Fredericksburg, VA'; // Update to your city
+    const city = 'Fredericksburg, US'; // Update to your city
+    const state = 'VA'; // Update to your state
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
 
     try {
