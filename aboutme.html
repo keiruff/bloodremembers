@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Me | Blood Remembers</title>
 
-<!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSRBNLZLS7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,8 +15,8 @@
   </script>
 
   <link rel="stylesheet" href="styles.css" />
-<style>
-    /* Mobile slideout menu styles */
+  <style>
+    /* Mobile hamburger menu styles */
     .menu-toggle {
       background: none;
       border: none;
@@ -60,14 +60,18 @@
       right: 20px;
       font-size: 30px;
       color: white;
+      text-decoration: none;
     }
 
     @media (min-width: 768px) {
-      .menu-toggle {
+      .menu-toggle,
+      .side-menu {
         display: none;
       }
+    }
 
-      .side-menu {
+    @media (max-width: 767px) {
+      nav {
         display: none;
       }
     }
@@ -75,12 +79,26 @@
 </head>
 <body>
 
-  <header>
-    <h1>About Me</h1>
-    <p>Uncovering my ancestral legacy through truth, memory, and spiritual purpose</p>
-  </header>
+  <!-- Mobile Hamburger Button -->
+  <button class="menu-toggle" onclick="openMenu()">☰</button>
 
-    <nav>
+  <!-- Slide-out Menu -->
+  <div class="side-menu" id="sideMenu">
+    <a href="javascript:void(0)" class="menu-close" onclick="closeMenu()">×</a>
+    <a href="index.html">Home</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="ancestry.html">Ancestry</a>
+    <a href="reparations101.html">Reparations 101</a>
+    <a href="petition.html">Petition</a>
+    <a href="resources.html">Resources</a>
+    <a href="legislationnews.html">Legislation News</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="contact-me.html">Contact Me</a>
+    <a href="newsletter.html">Archives</a>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav>
     <a href="index.html">Home</a>
     <a href="timeline.html">Timeline</a>
     <a href="ancestry.html">Ancestry</a>
@@ -92,6 +110,11 @@
     <a href="contact-me.html">Contact Me</a>
     <a href="newsletter.html">Archives</a>
   </nav>
+
+  <header>
+    <h1>About Me</h1>
+    <p>Uncovering my ancestral legacy through truth, memory, and spiritual purpose</p>
+  </header>
 
   <main>
     <section>
@@ -130,5 +153,14 @@
     <p>&copy; 2025 Blood Remembers. All rights reserved.</p>
   </footer>
 
+  <script>
+    function openMenu() {
+      document.getElementById("sideMenu").style.left = "0";
+    }
+
+    function closeMenu() {
+      document.getElementById("sideMenu").style.left = "-250px";
+    }
+  </script>
 </body>
 </html>
