@@ -1,97 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blood Remembers | Homepage</title>
-
-  <!-- Google tag (gtag.js) -->
+  <title>Blood Remembers | Honoring Our Ancestry</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSRBNLZLS7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-PSRBNLZLS7');
   </script>
-
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    .menu-toggle {
-      background: none;
-      border: none;
-      font-size: 2rem;
-      color: #800000;
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      z-index: 1001;
+  <script>
+    function openMenu() {
+      document.getElementById("sideMenu").style.left = "0";
     }
-
-    .side-menu {
-      height: 100%;
-      width: 250px;
-      position: fixed;
-      top: 0;
-      left: -250px;
-      background-color: #111;
-      overflow-x: hidden;
-      padding-top: 60px;
-      transition: 0.3s;
-      z-index: 1000;
+    function closeMenu() {
+      document.getElementById("sideMenu").style.left = "-250px";
     }
-
-    .side-menu a {
-      padding: 10px 20px;
-      text-decoration: none;
-      font-size: 18px;
-      color: #f2f2f2;
-      display: block;
-      transition: 0.2s;
-    }
-
-    .side-menu a:hover {
-      background-color: #800000;
-    }
-
-    .menu-close {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 30px;
-      color: white;
-      text-decoration: none;
-    }
-
-    @media (min-width: 768px) {
-      .menu-toggle,
-      .side-menu {
-        display: none;
-      }
-    }
-  </style>
+  </script>
 </head>
 <body>
-
   <!-- Hamburger Menu Button -->
-  <button class="menu-toggle" onclick="openMenu()">☰</button>
-
-  <!-- Slide-Out Menu -->
-  <div class="side-menu" id="sideMenu">
-    <a href="javascript:void(0)" class="menu-close" onclick="closeMenu()">&times;</a>
-    <a href="index.html">Home</a>
-    <a href="timeline.html">Timeline</a>
-    <a href="ancestry.html">Ancestry</a>
-    <a href="reparations101.html">Reparations 101</a>
-    <a href="petition.html">Petition</a>
-    <a href="resources.html">Resources</a>
-    <a href="legislationnews.html">Legislation News</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="contact-me.html">Contact Me</a>
-    <a href="newsletter.html">Archives</a>
-  </div>
-
-  <!-- Desktop Navigation -->
-  <nav>
+  <button class="menu-toggle" onclick="openMenu()">☰</button>  <!-- Slide-out Mobile Menu -->  <div class="side-menu" id="sideMenu">
+    <a href="javascript:void(0)" class="menu-close" onclick="closeMenu()">×</a>
     <a href="index.html" class="active">Home</a>
     <a href="timeline.html">Timeline</a>
     <a href="ancestry.html">Ancestry</a>
@@ -102,40 +35,41 @@
     <a href="aboutme.html">About Me</a>
     <a href="contact-me.html">Contact Me</a>
     <a href="newsletter.html">Archives</a>
-  </nav>
-
-  <!-- Header with Overlay -->
-  <header>
+  </div>  <!-- Desktop Nav -->  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="ancestry.html">Ancestry</a>
+    <a href="reparations101.html">Reparations 101</a>
+    <a href="petition.html">Petition</a>
+    <a href="resources.html">Resources</a>
+    <a href="legislationnews.html">Legislation News</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="contact-me.html">Contact Me</a>
+    <a href="newsletter.html">Archives</a>
+  </nav>  <header>
     <h1>Blood Remembers</h1>
     <p>Honoring the lives, histories, and legacies of the stolen and silenced</p>
-  </header>
-
-  <main>
+  </header>  <main>
     <section class="mission-box">
       <h2>Our Mission</h2>
       <p>
-        Blood Remembers is a historical and spiritual project committed to telling the truth about the African kingdoms,
-        Indigenous tribes, and enslaved peoples whose bloodlines built the world. This space is a living archive for their stories.
+        We honor the memory of African civilizations and demand justice for the centuries of stolen lives and wealth. Blood Remembers aims to preserve truth, inspire community dialogue, and advocate for meaningful reparations to fuel the ongoing generational harm of slavery and colonization.
       </p>
-    </section>
+    </section><section>
+  <h2>Honoring the Sovereign African Civilizations</h2>
+  <a href="timeline.html" class="cta-button">Discover Your Ancestry</a>
+</section>
 
-    <section style="text-align: center;">
-      <a href="timeline.html" class="cta-button">Explore the Timeline</a>
-      <a href="petition.html" class="cta-button">Sign the Petition</a>
-    </section>
-  </main>
+<section>
+  <h2>We Remember.</h2>
+  <p>
+    This platform is a vessel dedicated to those before us—their stories, names, and cultures stolen from thriving African civilizations and forced into the suffering.
+  </p>
+  <a href="petition.html" class="button">Sign the Petition</a>
+</section>
 
-  <footer>
+  </main>  <footer>
     <p>&copy; 2025 Blood Remembers. All rights reserved.</p>
   </footer>
-
-  <script>
-    function openMenu() {
-      document.getElementById('sideMenu').style.left = '0';
-    }
-    function closeMenu() {
-      document.getElementById('sideMenu').style.left = '-250px';
-    }
-  </script>
 </body>
 </html>
