@@ -1,79 +1,88 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blood Remembers – Home</title>  <!-- Google Analytics -->  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSRBNLZLS7"></script>  <script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Blood Remembers</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSRBNLZLS7"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-PSRBNLZLS7');
-  </script>  <link rel="stylesheet" href="styles.css" />
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
   <style>
+    /* Mobile hamburger menu styles */
     .menu-toggle {
       background: none;
       border: none;
       font-size: 2rem;
       color: #800000;
-      position: fixed;
+      position: absolute;
       top: 1rem;
       left: 1rem;
       z-index: 1001;
-    }.side-menu {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100%;
-  background: #111;
-  padding-top: 60px;
-  overflow-y: auto;
-  transition: left 0.3s;
-  z-index: 1000;
-}
+    }
 
-.side-menu a {
-  display: block;
-  padding: 12px 20px;
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 18px;
-}
+    .side-menu {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.3s;
+      z-index: 1000;
+    }
 
-.side-menu a:hover {
-  background-color: #800000;
-}
+    .side-menu a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #f2f2f2;
+      display: block;
+      transition: 0.2s;
+    }
 
-.menu-close {
-  position: absolute;
-  top: 8px;
-  right: 12px;
-  font-size: 2rem;
-  color: #fff;
-  text-decoration: none;
-}
+    .side-menu a:hover {
+      background-color: #800000;
+    }
 
-@media (min-width: 768px) {
-  .menu-toggle,
-  .side-menu {
-    display: none;
-  }
-  nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
+    .menu-close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+    }
 
-@media (max-width: 767px) {
-  nav {
-    display: none;
-  }
-}
+    @media (min-width: 768px) {
+      .menu-toggle,
+      .side-menu {
+        display: none;
+      }
+    }
 
+    @media (max-width: 767px) {
+      nav {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
+
+  <!-- Mobile Hamburger Button -->
   <button class="menu-toggle" onclick="openMenu()">☰</button>
+
+  <!-- Slide-out Menu -->
   <div class="side-menu" id="sideMenu">
     <a href="javascript:void(0)" class="menu-close" onclick="closeMenu()">×</a>
     <a href="index.html">Home</a>
@@ -87,8 +96,10 @@
     <a href="contact-me.html">Contact Me</a>
     <a href="newsletter.html">Archives</a>
   </div>
-<nav>
-    <a href="index.html" class="active">Home</a>
+
+  <!-- Desktop Nav -->
+  <nav>
+    <a href="index.html">Home</a>
     <a href="timeline.html">Timeline</a>
     <a href="ancestry.html">Ancestry</a>
     <a href="reparations101.html">Reparations 101</a>
