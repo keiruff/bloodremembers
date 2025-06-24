@@ -1,22 +1,22 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Newsletter Archive | Blood Remembers</title>
+  <title>About Me | Blood Remembers</title>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PSRBNLZLS7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PSRBNLZLS7');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSRBNLZLS7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PSRBNLZLS7');
+  </script>
 
   <link rel="stylesheet" href="styles.css" />
-<style>
-    /* Mobile slideout menu styles */
+  <style>
+    /* Mobile hamburger menu styles */
     .menu-toggle {
       background: none;
       border: none;
@@ -60,28 +60,57 @@
       right: 20px;
       font-size: 30px;
       color: white;
+      text-decoration: none;
     }
 
     @media (min-width: 768px) {
-      .menu-toggle {
+      .menu-toggle,
+      .side-menu {
         display: none;
       }
+    }
 
-      .side-menu {
+    @media (max-width: 767px) {
+      nav {
         display: none;
       }
     }
   </style>
 </head>
-<body><header>
-  <h1>Newsletter Archive</h1>
-  <p>Stay informed. Stay empowered. Revisit past issues of our monthly newsletter below.</p>
-</header><nav>
-  <a href="index.html">Home</a>
-  <a href="newsletter.html" class="active">Newsletter</a>
-  <a href="reparations101.html">Reparations 101</a>
-  <a href="resources.html">Resources</a>
-</nav><main style="max-width: 800px; margin: 2rem auto; padding: 1rem;">
+<body>
+
+  <!-- Mobile Hamburger Button -->
+  <button class="menu-toggle" onclick="openMenu()">☰</button>
+
+  <!-- Slide-out Menu -->
+  <div class="side-menu" id="sideMenu">
+    <a href="javascript:void(0)" class="menu-close" onclick="closeMenu()">×</a>
+    <a href="index.html">Home</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="ancestry.html">Ancestry</a>
+    <a href="reparations101.html">Reparations 101</a>
+    <a href="petition.html">Petition</a>
+    <a href="resources.html">Resources</a>
+    <a href="legislationnews.html">Legislation News</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="contact-me.html">Contact Me</a>
+    <a href="newsletter.html">Archives</a>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="ancestry.html">Ancestry</a>
+    <a href="reparations101.html">Reparations 101</a>
+    <a href="petition.html">Petition</a>
+    <a href="resources.html">Resources</a>
+    <a href="legislationnews.html">Legislation News</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="contact-me.html">Contact Me</a>
+    <a href="newsletter.html">Archives</a>
+  </nav>
+  <main style="max-width: 800px; margin: 2rem auto; padding: 1rem;">
  <main>
     <section class="mission-box">
       <h2>May 2025 - Reparations: What Are We Really Owed?</h2>
