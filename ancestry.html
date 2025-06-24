@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ancestry | Blood Remembers</title>
 
   <!-- Google tag (gtag.js) -->
@@ -16,64 +17,64 @@
 
   <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Mobile hamburger menu styles */
     .menu-toggle {
       background: none;
       border: none;
       font-size: 2rem;
       color: #800000;
-      position: absolute;
+      position: fixed;
       top: 1rem;
       left: 1rem;
       z-index: 1001;
     }
-
     .side-menu {
-      height: 100%;
-      width: 250px;
       position: fixed;
       top: 0;
       left: -250px;
-      background-color: #111;
-      overflow-x: hidden;
+      width: 250px;
+      height: 100%;
+      background: #111;
       padding-top: 60px;
-      transition: 0.3s;
+      overflow-y: auto;
+      transition: left 0.3s;
       z-index: 1000;
     }
-
     .side-menu a {
-      padding: 10px 20px;
+      display: block;
+      padding: 12px 20px;
+      color: #f2f2f2;
       text-decoration: none;
       font-size: 18px;
-      color: #f2f2f2;
-      display: block;
-      transition: 0.2s;
     }
-
     .side-menu a:hover {
       background-color: #800000;
     }
-
     .menu-close {
       position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 30px;
-      color: white;
+      top: 8px;
+      right: 12px;
+      font-size: 2rem;
+      color: #fff;
       text-decoration: none;
     }
-
     @media (min-width: 768px) {
-      .menu-toggle,
-      .side-menu {
-        display: none;
-      }
+      .menu-toggle, .side-menu { display: none; }
+      nav { display: flex; justify-content: center; flex-wrap: wrap; }
     }
-
     @media (max-width: 767px) {
-      nav {
-        display: none;
-      }
+      nav { display: none; }
+    }
+    .header-image {
+      background: url('featured-image.jpg') center/cover no-repeat;
+      height: 300px;
+      position: relative;
+    }
+    .header-image::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(173, 216, 230, 0.5);
     }
   </style>
 </head>
