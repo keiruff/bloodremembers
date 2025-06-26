@@ -1,175 +1,164 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blood Remembers – Home</title>  <!-- Google tag (gtag.js) -->  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSRBNLZLS7"></script>  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-PSRBNLZLS7');
-  </script>  <link rel="stylesheet" href="styles.css" />
-  <style>
-    .menu-toggle {
-      background: none;
-      border: none;
-      font-size: 2rem;
-      color: #800000;
-      position: fixed;
-      top: 1rem;
-      left: 1rem;
-      z-index: 1001;
-    }
-    .side-menu {
-      position: fixed;
-      top: 0;
-      left: -250px;
-      width: 250px;
-      height: 100%;
-      background: #111;
-      padding-top: 60px;
-      overflow-y: auto;
-      transition: left 0.3s;
-      z-index: 1000;
-    }
-    .side-menu a {
-      display: block;
-      padding: 12px 20px;
-      color: #f2f2f2;
-      text-decoration: none;
-      font-size: 18px;
-    }
-    .side-menu a:hover {
-      background-color: #800000;
-    }
-    .menu-close {
-      position: absolute;
-      top: 8px;
-      right: 12px;
-      font-size: 2rem;
-      color: #fff;
-      text-decoration: none;
-    }
-    @media (min-width: 768px) {
-      .menu-toggle, .side-menu { display: none; }
-      nav { display: flex; justify-content: center; flex-wrap: wrap; }
-    }
-    @media (max-width: 767px) {
-      nav { display: none; }
-    }
-    .header-image {
-      background: url('featured-image.jpg') center/cover no-repeat;
-      height: 300px;
-      position: relative;
-    }
-    .header-image::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-color: rgba(173, 216, 230, 0.5);
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blood Remembers | Reparations Petition</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <button class="menu-toggle" onclick="openMenu()">☰</button>
-  <div class="side-menu" id="sideMenu">
-    <a href="javascript:void(0)" class="menu-close" onclick="closeMenu()">×</a>
-    <a href="index.html">Home</a>
-    <a href="timeline.html">Timeline</a>
-    <a href="ancestry.html">Ancestry</a>
-    <a href="reparations101.html">Reparations 101</a>
-    <a href="petition.html">Petition</a>
-    <a href="resources.html">Resources</a>
-    <a href="legislationnews.html">Legislation News</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="contact-me.html">Contact Me</a>
-    <a href="newsletter.html">Archives</a>
-  </div>  <nav>
-    <a href="index.html">Home</a>
-    <a href="timeline.html">Timeline</a>
-    <a href="ancestry.html">Ancestry</a>
-    <a href="reparations101.html">Reparations 101</a>
-    <a href="petition.html">Petition</a>
-    <a href="resources.html">Resources</a>
-    <a href="legislationnews.html">Legislation News</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="contact-me.html">Contact Me</a>
-    <a href="newsletter.html">Archives</a>
-  </nav>  <div class="header-image"></div>  <main>
-    <section id="mission" class="mission-box">
-      <h2>Our Mission</h2>
-      <p>
-        We honor the memory of sovereign African civilizations and demand justice for the centuries of stolen labor,
-        land, and life. <strong>Blood Remembers</strong> exists to preserve truth, amplify ancestral dignity, and
-        advocate for meaningful reparations to heal the ongoing generational harm of slavery and colonization.
-      </p>
-    </section><section>
-  <h2>Honoring the Sovereign African Civilizations</h2>
-  <div style="text-align: center; margin: 3rem 0;">
-    <a href="ancestry.html" class="cta-button">Discover Your Ancestry</a>
-  </div>
-</section>
 
-<section>
-  <h3>We Remember.</h3>
-  <p>This petition is a sacred tribute to the children, mothers, fathers, and elders stolen from thriving African kingdoms and forced into a life of suffering.</p>
+<!-- Subheader -->
+<div class="subheader">
+  <div class="subheader-left">Stay Informed. Be Empowered.</div>
+  <div class="subheader-right" id="date-weather">Loading...</div>
+</div>
 
-  <h3>Sign the Petition</h3>
-  <p>Your voice matters. Sign and share this petition to help us raise awareness and demand action.</p>
+<!-- Weather Script -->
+<script>
+  async function loadWeatherAndDate() {
+    const apiKey = '109b75b0d8d98125242a21b32a65f193';
+    const city = 'Fredericksburg, US';
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
 
-  <div style="text-align: center; margin: 4rem 0;">
-    <a class="cta-button" href="https://www.change.org/reparations_now" target="_blank">
-      Sign the Petition on Change.org
-    </a>
-  </div>
-</section>
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      const temperature = Math.round(data.main.temp);
+      const conditions = data.weather[0].main;
 
-<section>
-  <h3>Legacy of Great Kingdoms</h3>
-  <img class="kingdom-image" src="featured-image.jpg" alt="Tribute to African Kingdoms" style="width:100%; max-width:600px; border-radius:8px; display:block; margin:2rem auto; box-shadow:0 4px 10px rgba(0,0,0,0.1);" />
-</section>
+      const today = new Date();
+      const dateString = today.toLocaleDateString(undefined, {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      });
 
-<section>
-  <h2>Sovereign Civilizations</h2>
-  <ul style="list-style:none; padding:0; max-width:700px; margin:2rem auto;">
-    <li><strong>Nok Civilization (1000 BCE–300 CE):</strong> advanced iron‐smelting & terracotta art.</li>
-    <li><strong>Kingdom of Kush (1070 BCE–350 CE):</strong> Nubian Pharaohs & pyramids.</li>
-    <li><strong>Carthage (814 BCE–146 BCE):</strong> maritime power rivaling Rome.</li>
-    <li><strong>Aksum Empire (100–940 CE):</strong> Ethiopian Christian empire.</li>
-    <li><strong>Ghana Empire (300–1200 CE):</strong> gold trade powerhouse.</li>
-    <li><strong>Mali Empire (1235–1600 CE):</strong> home to Mansa Musa & Timbuktu.</li>
-    <li><strong>Benin Kingdom (1100s–1897 CE):</strong> bronze artistry & city systems.</li>
-    <li><strong>Kingdom of Kongo (1390–1914 CE):</strong> central African empire.</li>
-    <li><strong>Zulu Kingdom (1816–1897 CE):</strong> military & cultural giant.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Rupert’s Valley, St. Helena</h2>
-  <p>
-    A forgotten graveyard of freedom seekers. Between 1840 and 1872, over 25,000 Africans were "liberated" by the British Royal Navy and brought here. Many died in quarantine and were buried in unmarked graves.
-  </p>
-  <p style="font-style: italic; color: #555;">We remember them not as victims—but as ancestors.</p>
-</section>
-
-<section>
-  <h2>Share This Page</h2>
-  <div style="text-align: center; margin: 1rem 0;">
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://bloodremembers.org" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" /></a>
-    <a href="https://twitter.com/intent/tweet?url=https://bloodremembers.org" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter" /></a>
-    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://bloodremembers.org" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733561.png" alt="LinkedIn" /></a>
-    <a href="mailto:?subject=Support%20Reparations&body=Check%20out%20BloodRemembers.org" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/732/732200.png" alt="Email" /></a>
-  </div>
-</section>
-
-  </main>  <footer>
-    <p>&copy; 2025 Blood Remembers. All rights reserved.</p>
-  </footer>  <script>
-    function openMenu() {
-      document.getElementById('sideMenu').style.left = '0';
+      document.getElementById('date-weather').textContent = `${dateString} | ${temperature}°F & ${conditions}`;
+    } catch (error) {
+      document.getElementById('date-weather').textContent = 'Unable to load weather';
     }
-    function closeMenu() {
-      document.getElementById('sideMenu').style.left = '-250px';
-    }
-  </script></body>
+  }
+  loadWeatherAndDate();
+</script>
+
+<!-- Header -->
+<header>
+  <h1>Blood Remembers</h1>
+  <p>Honoring the lives, histories, and legacies of the stolen and silenced</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="timeline.html">Timeline</a>
+  <a href="ancestry.html">Ancestry</a>
+  <a href="reparations101.html">Reparations 101</a>
+  <a href="petition.html">Petition</a>
+  <a href="resources.html">Resources</a>
+  <a href="legislationnews.html">Legislation News</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="contact-me.html">Contact Us</a>
+</nav>
+
+<!-- Main Content -->
+<main>
+  <section class="mission-box">
+    <h2>Why This Matters</h2>
+    <p>
+      This site exists to preserve the memory of African civilizations destroyed by the transatlantic slave trade.
+      Our ancestors created advanced societies with knowledge in astronomy, architecture, metallurgy, and governance.
+      From the empires of Mali, Kongo, Yoruba, and Benin to the walls of Great Zimbabwe and the libraries of Timbuktu,
+      their contributions have been systemically erased and rewritten. We reclaim these stories as acts of resistance and healing.
+    </p>
+  </section>
+
+  <section class="mission-box">
+    <h2>What You’ll Discover</h2>
+    <p>
+      Uncover detailed timelines of pre-colonial African kingdoms, spiritual practices, trade networks, and the brutal transitions into enslavement.
+      This journey exposes the truth hidden behind centuries of colonization — and honors the legacy of those who endured.
+    </p>
+  </section>
+
+  <section>
+    <h2>We Remember</h2>
+    <p style="text-align: center; max-width: 750px; margin: 0 auto;">
+      This petition is a sacred tribute to the children, mothers, fathers, and elders stolen from thriving African kingdoms and forced into a life of suffering.
+    </p>
+    <h3 style="text-align: center; margin-top: 2rem;">Sign the Petition</h3>
+    <p style="text-align: center; max-width: 750px; margin: 0 auto;">
+      Your voice matters. Sign and share this petition to help us raise awareness and demand action.
+    </p>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a class="cta-button" href="https://www.change.org/reparations_now" target="_blank">
+        Sign the Petition on Change.org
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Legacy of Great Kingdoms</h2>
+    <img class="kingdom-image" src="images/featured-image.jpg" alt="Tribute to African Kingdoms" style="width:100%; max-width: 300px; border-radius: 12px; display: block; margin: 2rem auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  </section>
+
+  <section>
+    <h2>Sovereign Civilizations</h2>
+    <p style="text-align: center; max-width: 750px; margin: 0 auto;">
+      A legacy of greatness runs through our veins. Before the ships, before the chains—there were kings, queens, scholars, and empires of unmatched brilliance.
+    </p>
+    <ul style="list-style-type: disc; padding-left: 1.5rem; max-width: 800px; margin: 2rem auto;">
+      <li><strong>Nok Civilization (1000 BCE – 300 CE):</strong> Known for advanced iron-smelting and terracotta artistry in Nigeria.</li>
+      <li><strong>Kingdom of Kush (1070 BCE – 350 CE):</strong> Nubian rulers with pyramids and Pharaohs of their own.</li>
+      <li><strong>Carthage (814 BCE – 146 BCE):</strong> A North African maritime power that rivaled Rome.</li>
+      <li><strong>Aksum Empire (100 CE – 940 CE):</strong> Ethiopian empire of obelisks and early Christianity.</li>
+      <li><strong>Ghana Empire (300 CE – 1200 CE):</strong> West African gold trade powerhouse.</li>
+      <li><strong>Mali Empire (1235 – 1600 CE):</strong> Home to Mansa Musa and Timbuktu’s scholarly centers.</li>
+      <li><strong>Benin Kingdom (1100s – 1897 CE):</strong> Renowned for bronze casting and organized city systems.</li>
+      <li><strong>Kingdom of Kongo (1390 – 1914 CE):</strong> Politically advanced Central African empire.</li>
+      <li><strong>Zulu Kingdom (1816 – 1897 CE):</strong> Military and cultural giant founded by Shaka Zulu.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Rupert’s Valley, St. Helena</h2>
+    <p style="max-width: 750px; margin: 0 auto;">
+      A forgotten graveyard of freedom seekers. Between 1840 and 1872, over 25,000 Africans<br>
+      were "liberated" from illegal slave ships by the British Royal Navy and brought to Rupert’s Valley.<br>
+      Many died in quarantine and were buried in unmarked graves.
+    </p>
+    <p style="max-width: 750px; margin: 1rem auto;">
+      In 2006, their remains were discovered during airport construction—alongside artifacts of trauma and resilience.<br>
+      Rupert’s Valley is now a sacred site of remembrance, evidence of lives stolen and struggles endured.
+    </p>
+    <p style="font-style: italic; color: #555; text-align: center;">We remember them not as victims—but as ancestors.</p>
+  </section>
+
+  <section>
+    <h2>Share This Page</h2>
+    <p style="text-align: center;">Spread the word and help us build a movement for justice and remembrance.</p>
+    <div style="text-align: center; margin-top: 1rem;">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://bloodremembers.org" target="_blank" style="margin: 0 10px;">
+        <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" />
+      </a>
+      <a href="https://twitter.com/intent/tweet?url=https://bloodremembers.org&text=Join%20me%20in%20supporting%20reparations%20and%20honoring%20our%20ancestors%20at%20BloodRemembers.org" target="_blank" style="margin: 0 10px;">
+        <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter" />
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://bloodremembers.org" target="_blank" style="margin: 0 10px;">
+        <img src="https://cdn-icons-png.flaticon.com/24/733/733561.png" alt="LinkedIn" />
+      </a>
+      <a href="mailto:?subject=Support%20Reparations%20%7C%20BloodRemembers.org&body=Take%20a%20stand%20and%20sign%20the%20petition%20at%20https://bloodremembers.org" style="margin: 0 10px;">
+        <img src="https://cdn-icons-png.flaticon.com/24/732/732200.png" alt="Email" />
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Blood Remembers | All Rights Reserved</p>
+</footer>
+
+</body>
 </html>
