@@ -190,7 +190,16 @@ p {
   }
 }
 
-/* Timeline */
+/* Timeline Container */
+.timeline-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Sticky Title */
 .sticky-timeline-title {
   position: sticky;
   top: 0;
@@ -203,53 +212,19 @@ p {
   border-bottom: 1px solid #ddd;
 }
 
-.timeline-container {
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.timeline-entry {
-  border-left: 4px solid #800000;
-  margin: 2rem 0;
-  padding-left: 1rem;
-  position: relative;
-}
-
-.timeline-entry h3 {
-  color: #800000;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.timeline-entry figure {
-  margin: 1rem 0;
-  text-align: center;
-}
-
-.timeline-entry img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-entry figcaption {
-  font-size: 0.85rem;
-  font-style: italic;
-  color: #555;
-  margin-top: 0.5rem;
-  text-align: center;
-}
-
 /* Horizontal Infographic Timeline */
 .image-timeline {
   overflow-x: auto;
   white-space: nowrap;
   padding: 2rem 0;
+}
+
+.timeline-scroll-container {
+  max-height: 600px;
+  overflow-y: auto;
+  position: relative;
+  background-color: #fff8f6;
+  padding-top: 1rem;
 }
 
 .timeline-track {
@@ -353,5 +328,9 @@ footer {
 
   .timeline-block {
     width: 220px;
+  }
+
+  .timeline-scroll-container {
+    max-height: none;
   }
 }
