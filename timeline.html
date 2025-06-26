@@ -4,99 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Historical Timeline | Blood Remembers</title>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSRBNLZLS7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-PSRBNLZLS7');
-  </script>
-
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    .menu-toggle {
-      background: none;
-      border: none;
-      font-size: 2rem;
-      color: #800000;
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      z-index: 1001;
-    }
-
-    .side-menu {
-      height: 100%;
-      width: 250px;
-      position: fixed;
-      top: 0;
-      left: -250px;
-      background-color: #111;
-      overflow-x: hidden;
-      padding-top: 60px;
-      transition: 0.3s;
-      z-index: 1000;
-    }
-
-    .side-menu a {
-      padding: 10px 20px;
-      text-decoration: none;
-      font-size: 18px;
-      color: #f2f2f2;
-      display: block;
-      transition: 0.2s;
-    }
-
-    .side-menu a:hover {
-      background-color: #800000;
-    }
-
-    .menu-close {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 30px;
-      color: white;
-      text-decoration: none;
-    }
-
-    @media (min-width: 768px) {
-      .menu-toggle,
-      .side-menu {
-        display: none;
-      }
-    }
-
-    @media (max-width: 767px) {
-      nav {
-        display: none;
-      }
-    }
-  </style>
 </head>
 <body>
+  <header>
+    <h1>Blood Remembers</h1>
+    <p>Honoring the lives, histories, and legacies of the stolen and silenced</p>
+    </header>
 
-  <!-- Mobile Hamburger Button -->
-  <button class="menu-toggle" onclick="openMenu()">☰</button>
-
-  <!-- Slide-out Menu -->
-  <div class="side-menu" id="sideMenu">
-    <a href="javascript:void(0)" class="menu-close" onclick="closeMenu()">×</a>
-    <a href="index.html">Home</a>
-    <a href="timeline.html">Timeline</a>
-    <a href="ancestry.html">Ancestry</a>
-    <a href="reparations101.html">Reparations 101</a>
-    <a href="petition.html">Petition</a>
-    <a href="resources.html">Resources</a>
-    <a href="legislationnews.html">Legislation News</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="contact-me.html">Contact Me</a>
-    <a href="newsletter.html">Archives</a>
-  </div>
-
-  <!-- Desktop Nav -->
   <nav>
     <a href="index.html">Home</a>
     <a href="timeline.html" class="active">Timeline</a>
@@ -110,11 +25,6 @@
     <a href="newsletter.html">Archives</a>
   </nav>
 
-  <header>
-    <h1>Blood Remembers</h1>
-    <p>Honoring the lives, histories, and legacies of the stolen and silenced</p>
-  </header>
-
   <main class="timeline-container">
     <h2>A Timeline of African Greatness</h2>
     <p class="intro">
@@ -123,86 +33,76 @@
     </p>
 
     <section class="image-timeline">
-      <h2>Historical Timeline of African Legacy</h2>
-      <div class="timeline-track">
+  <h2>Historical Timeline of African Legacy</h2>
+  <div class="timeline-track">
 
-        <div class="timeline-block">
-          <span class="timeline-date">c. 2400 BCE</span>
-          <img src="images/kush_pyramids.jpg" alt="Kingdom of Kush (Nubia)">
-          <p>Located in what is now Sudan, Kush rivaled Ancient Egypt and ruled over it during the 25th Dynasty.</p>
-        </div>
+    <div class="timeline-block">
+      <span class="timeline-date">c. 2400 BCE</span>
+      <img src="images/kush_pyramids.jpg" alt="Kingdom of Kush (Nubia)">
+      <p>Located in what is now Sudan, Kush rivaled Ancient Egypt and ruled over it during the 25th Dynasty.</p>
+    </div>
 
-        <div class="timeline-block">
-          <span class="timeline-date">c. 700 CE</span>
-          <img src="images/ghana-empire-map.png" alt="Ghana Empire">
-          <p>Earliest great empires in West Africa.</p>
-        </div>
+    <div class="timeline-block">
+      <span class="timeline-date">c. 700 CE</span>
+      <img src="images/ghana-empire-map.png" alt="Ghana Empire">
+      <p>Earliest great empires in West Africa.</p>
+    </div>
 
-        <div class="timeline-block">
-          <span class="timeline-date">c. 1100-1450</span>
-          <img src="images/Great-Zimbabwe-2.jpg" alt="Great Zimbabwe">
-          <p>Stone city housed thousands in extensive trade across the Indian Ocean.</p>
-        </div>
+    <div class="timeline-block">
+      <span class="timeline-date">c. 1100-1450</span>
+      <img src="images/Great-Zimbabwe-2.jpg" alt="Great Zimbabwe (also called Mutapa Empire)">
+      <p>Stone city housed thousands in extensive trade across the Indian Ocean.</p>
+    </div>
 
-        <div class="timeline-block">
-          <span class="timeline-date">c. 1235–1600</span>
-          <img src="images/mali-map.jpg" alt="Empire of Mali">
-          <p>Empire of Mali thrives under Mansa Musa.</p>
-        </div>
+    <div class="timeline-block">
+      <span class="timeline-date">c. 1235–1600</span>
+      <img src="images/mali-map.jpg" alt="Empire of Mali">
+      <p>Empire of Mali thrives under Mansa Musa.</p>
+    </div>
 
-        <div class="timeline-block">
-          <span class="timeline-date">c. 1452 CE</span>
-          <img src="images/portuguese-contract.jpg" alt="Papal Bull Dum Diversas">
-          <p>Pope Nicholas V authorizes the Portuguese to conquer and enslave non-Christians—a root of the transatlantic slave trade.</p>
-        </div>
+    <div class="timeline-block">
+      <span class="timeline-date">c. 1452 CE</span>
+      <img src="images/portuguese-contract.jpg" alt="Papal Bull Dum Diversas">
+      <p>1452 CE – Papal Bull Dum Diversas</h3>
+      <p>Pope Nicholas V authorizes the Portuguese<br>to conquer and enslave non-Christians<br>a root of the transatlantic slave trade.</p>
+    </div>
 
-        <div class="timeline-block">
-          <span class="timeline-date">c. 1464–1591</span>
-          <img src="images/Songhai-Empire-Map.png" alt="Songhai Empire">
-          <p>Known for its advanced administration and universities.</p>
-        </div>
+    <div class="timeline-block">
+      <span class="timeline-date">c. 1464–1591</span>
+      <img src="images/Songhai-Empire-Map.png" alt="Songhai Empire">
+      <p>Known for its advanced administration and universities. .</p>
+    </div>
+    
+    <div class="timeline-block">
+      <span class="timeline-date">c. 1500</span>
+      <img src="images/benin-bronze.jpg" alt="Benin Kingdom Art">
+      <p>Benin Kingdom develops world-renowned bronze artistry.</p>
+    </div>
 
-        <div class="timeline-block">
-          <span class="timeline-date">c. 1500</span>
-          <img src="images/benin-bronze.jpg" alt="Benin Kingdom Art">
-          <p>Benin Kingdom develops world-renowned bronze artistry.</p>
-        </div>
+    <div class="timeline-block">
+      <span class="timeline-date">c. 1619</span>
+      <img src="images/first_fricans.jpg" alt="First Africans in Jamestown">
+      <p>First enslaved Africans arrive in English North America.</p>
+    </div>
 
-        <div class="timeline-block">
-          <span class="timeline-date">c. 1619</span>
-          <img src="images/first_fricans.jpg" alt="First Africans in Jamestown">
-          <p>First enslaved Africans arrive in English North America.</p>
-        </div>
+    <div class="timeline-block">
+      <span class="timeline-date">c. 1808</span>
+      <img src="images/1805_Ordinance_excerpt.jpg" alt="Transatlantic Ban">
+      <p>U.S. officially bans transatlantic slave trade.</p>
+    </div>
 
-        <div class="timeline-block">
-          <span class="timeline-date">c. 1808</span>
-          <img src="images/1805_Ordinance_excerpt.jpg" alt="Transatlantic Ban">
-          <p>U.S. officially bans transatlantic slave trade.</p>
-        </div>
+    <div class="timeline-block">
+      <span class="timeline-date">c. 1865</span>
+      <img src="images/emancipation-proclamation.jpg" alt="Emancipation">
+      <p>Slavery officially ends in the U.S. with 13th Amendment.</p>
+    </div>
 
-        <div class="timeline-block">
-          <span class="timeline-date">c. 1865</span>
-          <img src="images/emancipation-proclamation.jpg" alt="Emancipation">
-          <p>Slavery officially ends in the U.S. with the 13th Amendment.</p>
-        </div>
-
-      </div>
-    </section>
+  </div>
+</section>
+    
   </main>
-
   <footer>
     <p>&copy; 2025 Blood Remembers | All Rights Reserved</p>
   </footer>
-
-  <!-- JavaScript for hamburger menu -->
-  <script>
-    function openMenu() {
-      document.getElementById("sideMenu").style.left = "0";
-    }
-    function closeMenu() {
-      document.getElementById("sideMenu").style.left = "-250px";
-    }
-  </script>
-
 </body>
 </html>
