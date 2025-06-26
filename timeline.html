@@ -6,60 +6,85 @@
   <title>Historical Timeline | Blood Remembers</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-  .image-timeline {
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 2rem 0;
-}
+    .image-timeline {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 2rem 0;
+      display: flex;
+      align-items: flex-start;
+    }
 
-.timeline-track {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 2rem;
-  padding: 1rem;
-}
+    .sticky-timeline-title {
+      position: sticky;
+      left: 0;
+      z-index: 5;
+      background-color: #fff8f6;
+      padding: 1rem;
+      margin-right: 2rem;
+      min-width: 280px;
+      max-height: fit-content;
+      flex: 0 0 auto;
+      text-align: left;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #800000;
+      border-right: 1px solid #ccc;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    }
 
-.timeline-block {
-  flex: 0 0 auto;
-  width: 280px;
-  background: #fff8f6;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 1rem;
-  text-align: center;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
-}
+    .timeline-track {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 2rem;
+      padding: 1rem;
+    }
 
-.timeline-block p {
-  word-break: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-  hyphens: auto;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
+    .timeline-block {
+      flex: 0 0 auto;
+      width: 280px;
+      background: #fff8f6;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 1rem;
+      text-align: center;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
 
-.timeline-block img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 0.75rem;
-}
+    .timeline-block p {
+      word-break: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+      hyphens: auto;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
 
-.timeline-date {
-  font-weight: bold;
-  color: #800000;
-  display: block;
-  margin-bottom: 0.5rem;
-}
+    .timeline-block img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+    }
 
-@media (max-width: 600px) {
-  .timeline-block {
-    width: 220px;
-  }
-}
+    .timeline-date {
+      font-weight: bold;
+      color: #800000;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .timeline-block {
+        width: 220px;
+      }
+
+      .sticky-timeline-title {
+        font-size: 1.2rem;
+        padding: 0.75rem;
+      }
+    }
   </style>
 </head>
 <body>
