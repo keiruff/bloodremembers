@@ -191,6 +191,18 @@ p {
 }
 
 /* Timeline */
+.sticky-timeline-title {
+  position: sticky;
+  top: 0;
+  background-color: #fff8f6;
+  z-index: 10;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #800000;
+  border-bottom: 1px solid #ddd;
+}
+
 .timeline-container {
   max-width: 1000px;
   margin: 2rem auto;
