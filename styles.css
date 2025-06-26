@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Body */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff8f6;
@@ -43,7 +43,6 @@ header {
   color: #fff;
   text-align: center;
   padding: 3rem 1rem;
-  z-index: 1;
 }
 
 header::before {
@@ -54,7 +53,13 @@ header::before {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  z-index: -1;
+  z-index: 0;
+}
+
+header h1,
+header p {
+  position: relative;
+  z-index: 1;
 }
 
 header h1 {
@@ -95,7 +100,7 @@ nav a.active {
   background-color: #800000;
 }
 
-/* Main Container */
+/* Main */
 main {
   max-width: 1000px;
   margin: 2rem auto;
@@ -105,21 +110,21 @@ main {
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-/* Section Styling */
+/* Sections */
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
-/* Headings */
 h1, h2, h3 {
   color: #800000;
-  margin-bottom: 1rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
-/* Paragraphs */
 p {
-  margin-bottom: 1.2em;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
 }
 
 /* Mission Box */
@@ -131,31 +136,12 @@ p {
   max-width: 750px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   border-left: 6px solid #800000;
-  animation: fadeIn 1.2s ease-in-out;
+  animation: fadeIn 1.2s ease-in-out forwards;
   opacity: 0;
   transform: translateY(20px);
-  animation-fill-mode: forwards;
-}
-
-.mission-box h2 {
-  margin-bottom: 1rem;
-  color: #800000;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.mission-box p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  text-align: center;
-  color: #333;
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -163,8 +149,7 @@ p {
 }
 
 /* Buttons */
-.cta-button,
-.button {
+.cta-button {
   display: inline-block;
   background-color: #800000;
   color: #fff;
@@ -175,36 +160,40 @@ p {
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  margin: 0.5rem auto;
 }
 
-.cta-button:hover,
-.button:hover {
+.cta-button:hover {
   background-color: #a30000;
 }
 
-/* Utility Styles */
+/* Lists */
 ul {
   list-style-position: outside;
   padding-left: 1.2rem;
   margin: 1rem auto;
-  max-width: 700px;
-  text-align: left;
+  max-width: 800px;
+  line-height: 1.7;
+  color: #222;
 }
 
-.intro {
-  text-align: center;
-  font-style: italic;
-  margin-bottom: 2rem;
+/* Kingdom Image */
+.kingdom-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  display: block;
+  margin: 2rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #222;
   color: #ccc;
   font-size: 0.9rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 /* Responsive */
@@ -220,8 +209,7 @@ footer {
     text-align: center;
   }
 
-  .cta-button,
-  .button {
+  .cta-button {
     width: 90%;
     max-width: 300px;
     padding: 0.75rem;
