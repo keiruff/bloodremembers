@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
 <!-- Subheader with Date and Weather -->
 <div class="subheader">
   <div class="subheader-left">Stay Informed. Be Empowered.</div>
@@ -16,7 +15,7 @@
 
 <script>
   async function loadWeatherAndDate() {
-    const apiKey = '109b75b0d8d98125242a21b32a65f193'; // Your actual key
+    const apiKey = '109b75b0d8d98125242a21b32a65f193';
     const city = 'Fredericksburg, US';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
 
@@ -28,7 +27,10 @@
 
       const today = new Date();
       const dateString = today.toLocaleDateString(undefined, {
-        weekday: 'short', year: 'numeric', month: 'short', day: 'numeric'
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
       });
 
       document.getElementById('date-weather').textContent = `${dateString} | ${temperature}°F & ${conditions}`;
@@ -41,13 +43,11 @@
   loadWeatherAndDate();
 </script>
 
-<!-- Header Section -->
 <header>
   <h1>Blood Remembers</h1>
   <p>Honoring the lives, histories, and legacies of the stolen and silenced</p>
 </header>
 
-<!-- Navigation -->
 <nav>
   <a href="index.html" class="active">Home</a>
   <a href="timeline.html">Timeline</a>
@@ -58,7 +58,6 @@
   <a href="legislationnews.html">Legislation News</a>
   <a href="aboutme.html">About Me</a>
   <a href="contact-me.html">Contact Us</a>
-  <a href="newsletter.html">Archives</a>
 </nav>
 
 <main>
@@ -153,7 +152,6 @@
   </section>
 </main>
 
-<!-- Footer -->
 <footer>
   <p>&copy; 2025 Blood Remembers | All Rights Reserved</p>
 </footer>
