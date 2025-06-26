@@ -8,16 +8,15 @@
 </head>
 <body>
 
-<!-- Subheader -->
+<!-- Subheader with Date and Weather -->
 <div class="subheader">
   <div class="subheader-left">Stay Informed. Be Empowered.</div>
   <div class="subheader-right" id="date-weather">Loading...</div>
 </div>
 
-<!-- Weather Script -->
 <script>
   async function loadWeatherAndDate() {
-    const apiKey = '109b75b0d8d98125242a21b32a65f193';
+    const apiKey = '109b75b0d8d98125242a21b32a65f193'; // Your actual key
     const city = 'Fredericksburg, US';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
 
@@ -29,21 +28,20 @@
 
       const today = new Date();
       const dateString = today.toLocaleDateString(undefined, {
-        weekday: 'short',
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric'
+        weekday: 'short', year: 'numeric', month: 'short', day: 'numeric'
       });
 
       document.getElementById('date-weather').textContent = `${dateString} | ${temperature}°F & ${conditions}`;
     } catch (error) {
       document.getElementById('date-weather').textContent = 'Unable to load weather';
+      console.error(error);
     }
   }
+
   loadWeatherAndDate();
 </script>
 
-<!-- Header -->
+<!-- Header Section -->
 <header>
   <h1>Blood Remembers</h1>
   <p>Honoring the lives, histories, and legacies of the stolen and silenced</p>
@@ -62,7 +60,6 @@
   <a href="contact-me.html">Contact Us</a>
 </nav>
 
-<!-- Main Content -->
 <main>
   <section class="mission-box">
     <h2>Why This Matters</h2>
@@ -83,7 +80,7 @@
   </section>
 
   <section>
-    <h2>We Remember</h2>
+    <h2 style="text-align: center;">We Remember</h2>
     <p style="text-align: center; max-width: 750px; margin: 0 auto;">
       This petition is a sacred tribute to the children, mothers, fathers, and elders stolen from thriving African kingdoms and forced into a life of suffering.
     </p>
@@ -100,7 +97,7 @@
 
   <section>
     <h2>Legacy of Great Kingdoms</h2>
-    <img class="kingdom-image" src="images/featured-image.jpg" alt="Tribute to African Kingdoms" style="width:100%; max-width: 300px; border-radius: 12px; display: block; margin: 2rem auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <img class="kingdom-image" src="featured-image.jpg" alt="Tribute to African Kingdoms" style="width:100%; max-width: 300px; border-radius: 12px; display: block; margin: 2rem auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
   </section>
 
   <section>
