@@ -1,65 +1,305 @@
 /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-{ margin: 0; padding: 0; box-sizing: border-box; }
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f6;
+  color: #222;
+}
 
+/* Subheader */
+.subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  color: #333;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  border-bottom: 1px solid #ccc;
+  font-weight: 500;
+}
 
-/* Body Styling */ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fff8f6; color: #222; }
+.subheader-left {
+  flex: 1;
+}
 
-/* Subheader */ .subheader { display: flex; justify-content: space-between; align-items: center; background-color: #eee; color: #333; padding: 0.5rem 1rem; font-size: 0.95rem; font-style: italic; border-bottom: 1px solid #ccc; font-weight: 500; }
+.subheader-right {
+  flex: 1;
+  text-align: right;
+}
 
-.subheader-left { flex: 1; }
+/* Header */
+header {
+  position: relative;
+  background: url('images/slavetrade-map.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  z-index: 1;
+}
 
-.subheader-right { flex: 1; text-align: right; }
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(173, 216, 230, 0.5);
+  z-index: -1;
+}
 
-/* Header with Image Overlay */ .header-image { background: url('featured-image.jpg') center/cover no-repeat; height: 300px; position: relative; }
+header h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  z-index: 2;
+  position: relative;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
 
-.header-image::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(173, 216, 230, 0.5); z-index: 0; }
+header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  z-index: 2;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
 
-/* Navigation */ nav { background-color: #333; display: flex; justify-content: center; flex-wrap: wrap; padding: 1rem; }
+/* Navigation */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
 
-nav a { color: white; background-color: #444; padding: 0.5rem 1rem; margin: 0.5rem; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease; font-weight: bold; }
+nav a {
+  color: white;
+  background-color: #444;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
 
-nav a:hover, nav a.active { background-color: #800000; }
+nav a:hover,
+nav a.active {
+  background-color: #800000;
+}
 
-/* Main Content Styling */ main { max-width: 900px; margin: 2rem auto; padding: 1rem; background-color: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+/* Main */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
 
-h1, h2, h3 { color: #800000; margin-bottom: 1rem; text-align: center; }
+/* Headings */
+h1, h2, h3 {
+  color: #800000;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
-p { margin-bottom: 1rem; text-align: center; }
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
-ul { list-style-position: outside; padding-left: 1.2rem; margin: 1rem auto; max-width: 700px; text-align: left; }
+/* Buttons */
+.cta-button,
+.button {
+  display: inline-block;
+  background-color: #800000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem auto;
+}
 
-.intro { text-align: center; font-style: italic; margin-bottom: 2rem; }
+.cta-button:hover,
+.button:hover {
+  background-color: #a30000;
+}
 
-/* Call-to-Action Buttons */ .cta-button, .button { display: inline-block; background-color: #800000; color: #fff; padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: bold; border: none; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease; margin: 0.5rem auto; }
+/* Mission Box */
+.mission-box {
+  background: url('images/paper-texture.png') center/cover repeat;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 750px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #800000;
+  animation: fadeIn 1.2s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: forwards;
+}
 
-.cta-button:hover, .button:hover { background-color: #a30000; }
+.mission-box::before {
+  content: "\1F56F";
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #800000;
+}
 
-/* Mission Box Styling */ .mission-box { background: url('images/paper-texture.png') center/cover repeat; padding: 2rem 1.5rem; border-radius: 12px; margin: 2rem auto; max-width: 750px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); border-left: 6px solid #800000; animation: fadeIn 1.2s ease-in-out; opacity: 0; transform: translateY(20px); animation-fill-mode: forwards; }
+.mission-box h2 {
+  margin-bottom: 1rem;
+  color: #800000;
+  font-size: 2rem;
+}
 
-.mission-box::before { content: "\1F56F"; display: block; font-size: 2rem; margin-bottom: 0.5rem; text-align: center; color: #800000; }
+.mission-box p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: center;
+  color: #333;
+}
 
-.mission-box h2 { margin-bottom: 1rem; color: #800000; font-size: 2rem; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-.mission-box p { font-size: 1.05rem; line-height: 1.7; text-align: center; color: #333; }
+/* Timeline */
+.timeline-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
 
-@keyframes fadeIn { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+.timeline-entry {
+  border-left: 4px solid #800000;
+  margin: 2rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
 
-.kingdom-image { width: 100%; max-width: 600px; border-radius: 8px; display: block; margin: 2rem auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.timeline-entry h3 {
+  color: #800000;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
-footer { text-align: center; padding: 1rem; background-color: #222; color: #ccc; font-size: 0.9rem; margin-top: 2rem; }
+.timeline-entry figure {
+  margin: 1rem 0;
+  text-align: center;
+}
 
-/* Responsive Adjustments */ @media (max-width: 600px) { nav { flex-direction: column; align-items: center; }
+.timeline-block img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto 1rem auto;
+}
 
-nav a { width: 100%; margin: 0.25rem 0; text-align: center; }
+.timeline-entry figcaption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+  text-align: center;
+}
 
-.cta-button, .button { width: 90%; max-width: 300px; padding: 0.75rem; }
+/* Utilities */
+ul {
+  list-style-position: outside;
+  padding-left: 1.2rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  text-align: left;
+}
 
-main { padding: 1rem 0.5rem; }
+.intro {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
 
-.standard-size { width: 100%; }
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
 
-.subheader { flex-direction: column; align-items: flex-start; }
+/* Responsive */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.subheader-right { text-align: left; margin-top: 0.5rem; } }
+  nav a {
+    width: 100%;
+    margin: 0.25rem 0;
+    text-align: center;
+  }
 
+  .cta-button,
+  .button {
+    width: 90%;
+    max-width: 300px;
+    padding: 0.75rem;
+  }
+
+  main {
+    padding: 1rem 0.5rem;
+  }
+
+  .standard-size {
+    width: 100%;
+  }
+
+  .subheader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subheader-right {
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+
+  .timeline-block img {
+    aspect-ratio: 16 / 9;
+  }
+}
