@@ -264,6 +264,12 @@ p {
   margin-bottom: 0.75rem;
 }
 
+.timeline-block p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
 .timeline-date {
   font-weight: bold;
   color: #800000;
