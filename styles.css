@@ -188,6 +188,7 @@ p {
   font-size: 1.05rem;
   line-height: 1.7;
   text-align: center;
+  word-wrap: break-word;
   color: #333;
 }
 
