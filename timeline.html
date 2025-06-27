@@ -7,57 +7,47 @@
   <meta name="description" content="Explore a historical timeline of African civilizations, the transatlantic slave trade, and key events shaping the legacy of African descendants.">
   <link rel="stylesheet" href="styles.css" />
   <style>
-  .image-timeline {
-    overflow-x: auto;
-    padding: 2rem 0;
-  }
-
-  .timeline-track {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 2rem;
-    white-space: nowrap;
-    padding: 1rem;
-  }
-
-  .timeline-block {
-    flex: 0 0 auto;
-    width: 280px;
-    background: #fff8f6;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    padding: 1rem;
-    text-align: center;
-    white-space: normal; /* <-- allow text wrapping inside blocks */
-  }
-
-  .timeline-block img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 0.75rem;
-  }
-
-  .timeline-date {
-    font-weight: bold;
-    color: #800000;
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-
-  @media (max-width: 600px) {
-    .timeline-block {
-      width: 220px;
+    .image-timeline {
+      overflow-x: auto;
+      padding: 2rem 0;
     }
-  }
-</style>
+    .timeline-track {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 2rem;
+      white-space: nowrap;
+      padding: 1rem;
+    }
+    .timeline-block {
+      flex: 0 0 auto;
+      width: 280px;
+      background: #fff8f6;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 1rem;
+      text-align: center;
+      white-space: normal;
+    }
+    .timeline-block img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+    }
+    .timeline-date {
+      font-weight: bold;
+      color: #800000;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 600px) {
+      .timeline-block {
+        width: 220px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Blood Remembers</h1>
-    <p>Honoring the lives, histories, and legacies of the stolen and silenced</p>
-  </header>
-
   <nav>
     <a href="index.html">Home</a>
     <a href="timeline.html" class="active">Timeline</a>
