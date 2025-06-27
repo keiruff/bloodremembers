@@ -123,6 +123,7 @@ h1, h2, h3 {
   color: #800000;
   margin-bottom: 1rem;
   text-align: center;
+  word-wrap: break-word;
 }
 
 /* Paragraphs */
