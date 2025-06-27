@@ -4,6 +4,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reparations 101</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Mailchimp CSS for the embed form -->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    #mc_embed_signup {
+      background: #fff;
+      clear: left;
+      font: 14px Helvetica, Arial, sans-serif;
+      width: 100%;
+      margin: 2rem auto;
+      max-width: 600px;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -25,6 +40,7 @@
   </nav>
 
  <main>
+   <!-- FAQs, Map, Downloadable Guides, etc. -->
     <section class="faq-section" style="background-color: #fff8f6; padding: 2rem; border-radius: 12px; max-width: 900px; margin: 2rem auto; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
   <h2 style="text-align: center; color: #800000;">Frequently Asked Questions</h2>
   <ul style="line-height: 1.8; font-size: 1.05rem; color: #222; list-style-position: inside;">
@@ -44,6 +60,7 @@
   </ul>
 </section>
 
+   <!-- Other sections -->
 <section>
   <h2>Interactive Map of Trans-Atlantic Slave Trade</h2>
   <img src="images/slavevoyages-preview.jpg" alt="Slave Voyages Map Preview" style="max-width: 100%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-bottom: 1rem;" />
@@ -96,41 +113,81 @@
     Stay connected with our movement. Get updates on new research, events, and advocacy.
   </p>
 
-  <form action="https://formspree.io/f/your-form-id" method="POST"
-        style="max-width: 600px; margin: 2rem auto; text-align: center;">
-    
-    <!-- Honeypot field (anti-bot) -->
-    <input type="text" name="_gotcha" style="display:none" />
-
-    <label for="email" style="display:block; margin-bottom: 0.5rem;">Enter your email:</label>
-    <input type="email" name="email" id="email" placeholder="you@example.com"
-           required style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc; margin-bottom: 1rem;">
-
-    <button type="submit" class="cta-button">Subscribe</button>
-
-    <!-- Custom success message -->
-    <p id="form-success" style="display:none; color: green; font-weight: bold; margin-top: 1rem;">
-      Thank you for subscribing!<br>Stay Informed. Be Empowered.
-</p>
-  </form>
-
-  <script>
-    // Simple success message handler for Formspree
-    const form = document.querySelector('form');
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
-      if (response.ok) {
-        form.reset();
-        document.getElementById('form-success').style.display = 'block';
-      }
-    });
-  </script>
-</section>
+  <!-- Mailchimp Embed Form -->
+      <div id="mc_embed_shell">
+        <div id="mc_embed_signup">
+          <form action="https://bloodremembers.us15.list-manage.com/subscribe/post?u=ead972b999f2b1d5bc78c4a0e&amp;id=80c66396ae&amp;f_id=00c1c2e1f0"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <h2>Subscribe</h2>
+              <div class="indicates-required">
+                <span class="asterisk">*</span> indicates required
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-FNAME">First Name</label>
+                <input type="text" name="FNAME" class=" text" id="mce-FNAME">
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-LNAME">Last Name</label>
+                <input type="text" name="LNAME" class=" text" id="mce-LNAME">
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-MMERGE3">Phone Number (Optional)</label>
+                <div class="phonefield phonefield-us">
+                  (<span class="phonearea">
+                    <input class="phonepart" pattern="[0-9]*" id="mce-MMERGE3-area" name="MMERGE3[area]" maxlength="3" size="3" type="text">
+                  </span>)
+                  <span class="phonedetail1">
+                    <input class="phonepart" pattern="[0-9]*" id="mce-MMERGE3-detail1" name="MMERGE3[detail1]" maxlength="3" size="3" type="text">
+                  </span> -
+                  <span class="phonedetail2">
+                    <input class="phonepart" pattern="[0-9]*" id="mce-MMERGE3-detail2" name="MMERGE3[detail2]" maxlength="4" size="4" type="text">
+                  </span>
+                  <span class="small-meta nowrap">(###) ###-####</span>
+                </div>
+              </div>
+              <div id="mce-responses" class="clear foot">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                <input type="text" name="b_ead972b999f2b1d5bc78c4a0e_80c66396ae" tabindex="-1" value="">
+              </div>
+              <div class="optionalParent">
+                <div class="clear foot">
+                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                  <p style="margin:0 auto;">
+                    <a href="http://eepurl.com/jh0_qs" title="Mailchimp - email marketing made easy and fun">
+                      <span style="display:inline-block;">
+                        <img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                             alt="Intuit Mailchimp" style="width:220px;height:40px;">
+                      </span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+        <script>
+          (function($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0]='EMAIL';ftypes[0]='email';
+            fnames[1]='FNAME';ftypes[1]='text';
+            fnames[2]='LNAME';ftypes[2]='text';
+            fnames[3]='MMERGE3';ftypes[3]='phone';
+          }(jQuery));
+          var $mcj = jQuery.noConflict(true);
+        </script>
+      </div>
+    </section>
 
 <section>
   <h2>Print & Share</h2>
