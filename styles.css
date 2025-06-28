@@ -333,7 +333,7 @@ footer {
   color: #00bcd4; /* or another link color */
   text-decoration: underline;
 }
-  .evo-calendar .calendar-container {
+.calendar-container {
   max-width: 400px;
   margin: 0 auto;
 }
