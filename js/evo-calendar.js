@@ -31,9 +31,9 @@ $("#calendar").evoCalendar({
     },
     {
       id: "event5",
-      name: "The Big Payback Podcast",
+      name: "Code Switch Podcast",
       date: ["2025-01-01", "2025-12-31"],
-      description: "New episodes every week<br><a href="https://thebigpayback.com/podcast">Listen & Subscribe</a>",
+      description: "New episodes every week<br><a href='https://www.npr.org/sections/codeswitch/' target='_blank'>Listen & Subscribe</a>",
       type: "event"
     },
     {
