@@ -316,4 +316,82 @@ footer {
   .timeline-block img {
     aspect-ratio: 16 / 9;
   }
+
+  .events-calendar {
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+}
+
+.events-calendar h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.event {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.event-date.red {
+  background: #e74c3c;
+}
+
+.event-date.gray {
+  background: #7f8c8d;
+}
+
+.event-date.blue {
+  background: #2980b9;
+}
+
+.event-date .day {
+  font-size: 1.6rem;
+}
+
+.event-date .month {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.event-details {
+  padding: 1rem;
+}
+
+.event-details h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.event-details p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+  .event-details a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.event-details a:hover {
+  text-decoration: underline;
+}
 }
