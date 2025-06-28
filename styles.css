@@ -326,3 +326,14 @@ footer {
   font-weight: 700;
   font-size: 1rem;
 }
+.evo-calendar .event-description a {
+  word-break: break-word;
+  display: inline-block;
+  margin-top: 0.3em;
+  color: #00bcd4; /* or another link color */
+  text-decoration: underline;
+}
+  .evo-calendar .calendar-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
