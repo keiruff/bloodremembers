@@ -9,11 +9,11 @@ $("#calendar").evoCalendar({
       type: "event"
     },
     {
-      id: "event2",
-      name: "Illinois ADCRC Full Commission Meeting",
-      date: "2025-06-28",
-      description: "Virtual + In-Person<br><a href="https://adcrc.illinois.gov/meetings.html">Meeting Details</a>",
-      type: "event"
+     id: "event2",
+     name: "Illinois ADCRC Full Commission Meeting",
+     date: "2025-06-28",
+     description: "Virtual + In-Person<br><a href='https://adcrc.illinois.gov/meetings.html' target='_blank'>Meeting Details</a>",
+     type: "event"
     },
     {
       id: "event3",
