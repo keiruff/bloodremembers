@@ -72,7 +72,9 @@
         <div style="height: 70%; background-color: #b85c38; border-radius: 0 0 20px 20px;"></div>
       </div>
     </div>
-    <p style="margin-top: 1rem; color: #444;">Help us reach our goal!</p>
+    <p style="margin-top: 1rem; color: #444;">
+  <span id="counter">0</span> / 100 signatures
+</p>
   </div>
 </section>
 
@@ -82,6 +84,7 @@
     <p>&copy; 2025 Blood Remembers | All Rights Reserved</p>
   </footer>
     
+  <script>
 // Animate number counting up
 const counter = document.getElementById('counter');
 let count = 0;
@@ -95,5 +98,6 @@ const interval = setInterval(() => {
     clearInterval(interval);
   }
 }, 50);
+</script>  
 </body>
 </html>
