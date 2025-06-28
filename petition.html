@@ -81,6 +81,19 @@
   <footer>
     <p>&copy; 2025 Blood Remembers | All Rights Reserved</p>
   </footer>
-
+    
+// Animate number counting up
+const counter = document.getElementById('counter');
+let count = 0;
+const target = 100; // total goal
+const current = 7; // current count
+const interval = setInterval(() => {
+  if (count < current) {
+    count++;
+    counter.textContent = count;
+  } else {
+    clearInterval(interval);
+  }
+}, 50);
 </body>
 </html>
