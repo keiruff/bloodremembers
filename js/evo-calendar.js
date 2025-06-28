@@ -45,10 +45,3 @@ $("#calendar").evoCalendar({
     }
   ]
 });
-    var features = [
-    'Flexible and fully customizable',
-    'Responsive — has desktop, tablet and mobile design',
-    'Add, remove and view calendar events',
-    'Events and methods that lets you think outside the box :)',
-    'Does "modern-looking" counts? Then I'm in!',
-]; // and more features to come...
