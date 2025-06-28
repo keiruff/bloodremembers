@@ -1,5 +1,5 @@
 $("#calendar").evoCalendar({
-  theme: "Midnight Blue",
+  theme: "Orange Coral",
   calendarEvents: [
    {
       id: "event1",
