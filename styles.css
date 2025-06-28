@@ -316,8 +316,7 @@ footer {
   .timeline-block img {
     aspect-ratio: 16 / 9;
   }
-
-/*
+  
 /* Events Calendar */
 .events-calendar {
   max-width: 600px;
