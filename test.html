@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Calendar Test</title>
+  <style>
+    body {
+      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    .events-calendar {
+      max-width: 700px;
+      margin: 3rem auto;
+      font-family: Arial, sans-serif;
+    }
+    .events-calendar h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #800000;
+    }
+    .event {
+      display: flex;
+      align-items: stretch;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      border-left: 5px solid #800000;
+    }
+    .event-date {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      color: #fff;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    .event-date.red {
+      background: #e74c3c;
+    }
+    .event-date .day {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+    .event-date .month {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+    .event-details {
+      padding: 1rem;
+      flex: 1;
+    }
+    .event-details h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .event-details p {
+      margin: 0.3rem 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .event-details a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .event-details a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<section class="events-calendar">
+  <h2>Upcoming Reparations Events</h2>
+  <div class="event">
+    <div class="event-date red">
+      <span class="day">24</span>
+      <span class="month">JUN</span>
+    </div>
+    <div class="event-details">
+      <h3>Test Event Title</h3>
+      <p>🕗 7:00 PM</p>
+      <p>📍 Online</p>
+      <a href="#">Details</a>
+    </div>
+  </div>
+</section>
+</body>
+</html>
