@@ -317,7 +317,8 @@ footer {
     aspect-ratio: 16 / 9;
   }
 
-  /* Events Calendar */
+/*
+/* Events Calendar */
 .events-calendar {
   max-width: 600px;
   margin: 3rem auto;
@@ -394,3 +395,4 @@ footer {
 .event-details a:hover {
   text-decoration: underline;
 }
+*/
