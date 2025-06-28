@@ -1,5 +1,5 @@
 $("#calendar").evoCalendar({
-  theme: "Orange Coral",
+  theme: "Midnight Blue",
   calendarEvents: [
    {
       id: "event1",
@@ -40,7 +40,7 @@ $("#calendar").evoCalendar({
       id: "event6",
       name: "National Reparations Rally",
       date: "2025-09-01",
-      description: "Washington, DC<br>Final Event Date TBA<br><a href="https://reparationscomm.org/">Check for Updates</a>",
+      description: "Washington, DC<br>Final Event Date TBA<br><a href='https://reparationscomm.org/' target='_blank'>Check for Updates</a>",
       type: "event"
     },
     
