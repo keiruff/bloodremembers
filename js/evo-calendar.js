@@ -19,14 +19,14 @@ $("#calendar").evoCalendar({
       id: "event3",
       name: "ADCRC Full Commission Meeting",
       date: "2025-07-18",
-      description: "Virtual + In-Person<br><a href="https://adcrc.illinois.gov/meetings.html">Meeting Details</a>",
+      description: "Virtual + In-Person<br><a href='https://adcrc.illinois.gov/meetings.html' target='_blank'>Meeting Details</a>",
       type: "event"
     },
     {
       id: "event4",
       name: "ADCRC Full Commission Meeting",
       date: "2025-08-15",
-      description: "Virtual + In-Person<br><a href="https://adcrc.illinois.gov/meetings.html">Meeting Details</a>",
+      description: "Virtual + In-Person<br><a href='https://adcrc.illinois.gov/meetings.html' target='_blank'>Meeting Details</a>",
       type: "event"
     },
     {
