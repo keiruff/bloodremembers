@@ -334,6 +334,9 @@ footer {
   text-decoration: underline;
 }
 .calendar-container {
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 600px;  /* or 500px, or 400px — whatever size you like */
+  margin: 2rem auto; /* centers it horizontally with space above/below */
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;  /* keeps corners rounded */
 }
