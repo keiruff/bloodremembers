@@ -3,8 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Resources | Blood Remembers</title>
   <meta name="description" content="Access resources on reparations, African history, advocacy toolkits, and educational materials to support awareness and action for justice.">
+  <title>Resources | Blood Remembers</title>
+  <style>
+    body {
+      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    .events-calendar {
+      max-width: 700px;
+      margin: 3rem auto;
+      font-family: Arial, sans-serif;
+    }
+    .events-calendar h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #800000;
+    }
+    .event {
+      display: flex;
+      align-items: stretch;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      border-left: 5px solid #800000;
+    }
+    .event-date {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      color: #fff;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    .event-date.red {
+      background: #e74c3c;
+    }
+    .event-date .day {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+    .event-date .month {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+    .event-details {
+      padding: 1rem;
+      flex: 1;
+    }
+    .event-details h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .event-details p {
+      margin: 0.3rem 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .event-details a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .event-details a:hover {
+      text-decoration: underline;
+    }
+  </style>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -61,79 +134,91 @@
     <section class="events-calendar">
   <h2>Upcoming Reparations Events</h2>
 
-<div class="event">
-  <div class="event-date red">
-    <span class="day">24</span>
-    <span class="month">JUN</span>
+  <div class="event">
+    <div class="event-date red">
+      <span class="day">24</span>
+      <span class="month">JUN</span>
+    </div>
+    <div class="event-details">
+      <h3>Journey Toward Reparations Webinar</h3>
+      <p>7:00 PM ET</p>
+      <p>Online (Diocese of New Jersey)</p>
+      <a href="https://dioceseofnj.org/journey-toward-reparations/">Details & Registration</a>
+    </div>
   </div>
-  <div class="event-details">
-    <h3>Journey Toward Reparations Webinar</h3>
-    <p>7:00 PM ET</p>
-    <p>Online (Diocese of New Jersey)</p>
-    <a href="https://dioceseofnj.org/journey-toward-reparations/">Details & Registration</a>
+
+  <div class="event">
+    <div class="event-date gray">
+      <span class="day">28</span>
+      <span class="month">JUN</span>
+    </div>
+    <div class="event-details">
+      <h3>Illinois ADCRC Full Commission Meeting</h3>
+      <p>Virtual + In-Person</p>
+      <a href="https://adcrc.illinois.gov/meetings.html">Meeting Details</a>
+    </div>
   </div>
-</div>
 
+  <div class="event">
+    <div class="event-date blue">
+      <span class="day">17</span>
+      <span class="month">JUL</span>
+    </div>
+    <div class="event-details">
+      <h3>ADCRC Research Subcommittee Meeting</h3>
+      <p>Virtual</p>
+      <a href="https://adcrc.illinois.gov/meetings.html">Meeting Details</a>
+    </div>
+  </div>
 
-<div class="event">
-  <div class="event-date gray">
-  <h2>Illinois ADCRC Full Commission Meeting</h2>
-  <p><strong>Date:</strong> June 28, 2025</p>
-  <p><strong>Time:</strong> Virtual + In-Person</p>
-  <p><strong>Location:</strong>Virtual + In-Person</p>
-  <a href="https://adcrc.illinois.gov/meetings.html" target="_blank">Meeting Details</a>
-</div>
-</div>
-      
-<div class="event">
-  <div class="event-date blue">
-  <h2>ADCRC Research Subcommittee Meeting</h2>
-  <p><strong>Date:</strong> July 17, 2025</p>
-  <p><strong>Time:</strong> Virtual</p>
-  <p><strong>Location:</strong> Virtual</p>
-  <a href="https://adcrc.illinois.gov/meetings.html" target="_blank">Meeting Details</a>
-</div>
-</div>
+  <div class="event">
+    <div class="event-date red">
+      <span class="day">18</span>
+      <span class="month">JUL</span>
+    </div>
+    <div class="event-details">
+      <h3>ADCRC Full Commission Meeting</h3>
+      <p>Virtual + In-Person</p>
+      <a href="https://adcrc.illinois.gov/meetings.html">Meeting Details</a>
+    </div>
+  </div>
 
-<div class="event">
-  <div class="event-date red">
-  <h2>ADCRC Full Commission Meeting</h2>
-  <p><strong>Date:</strong> July 18, 2025</p>
-  <p><strong>Time:</strong> Virtual + In-Person</p>
-  <p><strong>Location:</strong> Virtual + In-Person</p>
-  <a href="https://adcrc.illinois.gov/meetings.html" target="_blank">Meeting Details</a>
-</div>
-</div>
+  <div class="event">
+    <div class="event-date gray">
+      <span class="day">15</span>
+      <span class="month">AUG</span>
+    </div>
+    <div class="event-details">
+      <h3>ADCRC Full Commission Meeting</h3>
+      <p>Virtual + In-Person</p>
+      <a href="https://adcrc.illinois.gov/meetings.html">Meeting Details</a>
+    </div>
+  </div>
 
-<div class="event">
-  <div class="event-date gray">
-  <h2>ADCRC Full Commission Meeting</h2>
-  <p><strong>Date:</strong> August 15, 2025</p>
-  <p><strong>Time:</strong> Virtual + In-Person</p>
-  <p><strong>Location:</strong> Virtual + In-Person</p>
-  <a href="https://adcrc.illinois.gov/meetings.html" target="_blank">Meeting Details</a>
-</div>
-</div>
+  <div class="event">
+    <div class="event-date blue">
+      <span class="day">WEEKLY</span>
+      <span class="month">POD</span>
+    </div>
+    <div class="event-details">
+      <h3>The Big Payback Podcast</h3>
+      <p>New episodes every week</p>
+      <a href="https://thebigpayback.com/podcast">Listen & Subscribe</a>
+    </div>
+  </div>
 
-<div class="event">
-  <div class="event-date blue">
-  <h2>The Big Payback Podcast</h2>
-  <p><strong>Date:</strong> Weekly</p>
-  <p><strong>Time:</strong> New episodes every week</p>
-  <p><strong>Location:</strong> Podcast</p>
-  <a href="https://thebigpayback.com/podcast" target="_blank">Listen & Subscribe</a>
-</div>
-</div>
-
-<div class="event">
-  <div class="event-date red">
-  <h2>National Reparations Rally</h2>
-  <p><strong>Date:</strong> September 2025</p>
-  <p><strong>Time:</strong> TBA</p>
-  <p><strong>Location:</strong> Washington, DC</p>
-  <a href="https://reparationscomm.org/" target="_blank">Check for Updates</a>
-</div>
-</div>
+  <div class="event">
+    <div class="event-date red">
+      <span class="day">SEP</span>
+      <span class="month">2025</span>
+    </div>
+    <div class="event-details">
+      <h3>National Reparations Rally</h3>
+      <p>Washington, DC</p>
+      <p>Date TBA</p>
+      <a href="https://reparationscomm.org/">Check for Updates</a>
+    </div>
+  </div>
 </section>
     
   </main>
