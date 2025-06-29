@@ -44,12 +44,6 @@ header {
   padding: 3rem 1rem;
   z-index: 1;
 }
-nav {
-  margin-bottom: 1em;
-}
-nav {
-  margin-bottom: 1em;
-}
 
 header::before {
   content: "";
@@ -66,24 +60,23 @@ header h1 {
   font-size: 2.75rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  z-index: 2;
-  position: relative;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 header p {
   font-size: 1.2rem;
   font-weight: 400;
-  z-index: 2;
-  position: relative;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
-/* Desktop nav styles */
+/* Navigation - Desktop */
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #333;
+  color: white;
+  padding: 0.5em;
 }
 
 .nav-links {
@@ -103,34 +96,7 @@ header p {
   display: none;
   font-size: 1.5em;
   cursor: pointer;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    max-height: 0;
-    overflow: hidden;
-    flex-direction: column;
-    background: #333;
-    width: 100%;
-    transition: max-height 0.3s ease-out;
-  }
-
-  .nav-links.active {
-    max-height: 500px; /* or 1000px if you need more space */
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    font-size: 1.5em;
-    padding: 0.5em;
-  }
+  padding: 0.5em;
 }
 
 /* Main Content */
@@ -145,13 +111,12 @@ main {
 
 main section {
   margin-bottom: 2rem;
-  scroll-margin-top: 80px; /* adjust as needed */
+  scroll-margin-top: 80px; /* ensures anchor links are visible below nav */
 }
 
 section p {
   margin-bottom: 1.2em;
   line-height: 1.7;
-  color: #333;
 }
 
 /* Headings */
@@ -159,14 +124,12 @@ h1, h2, h3 {
   color: #800000;
   margin-bottom: 1rem;
   text-align: center;
-  word-wrap: break-word;
 }
 
 /* Paragraphs */
 p {
   margin-bottom: 1.2em;
   line-height: 1.6;
-  color: #222;
 }
 
 /* Buttons */
@@ -211,7 +174,6 @@ p {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   text-align: center;
-  word-wrap: break-word;
   color: #800000;
 }
 
@@ -225,7 +187,6 @@ p {
   font-size: 1.05rem;
   line-height: 1.7;
   text-align: center;
-  word-wrap: break-word;
   color: #333;
 }
 
@@ -253,7 +214,6 @@ p {
   border-left: 4px solid #800000;
   margin: 2rem 0;
   padding-left: 1rem;
-  position: relative;
 }
 
 .timeline-entry h3 {
@@ -275,8 +235,6 @@ p {
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 auto 1rem auto;
 }
 
 .timeline-entry figcaption {
@@ -311,61 +269,27 @@ footer {
   margin-top: 2rem;
 }
 
-/* Responsive */
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cta-button,
-  .button {
-    width: 90%;
-    max-width: 300px;
-    padding: 0.75rem;
-  }
-
-  main {
-    padding: 1rem 0.5rem;
-  }
-
-  .standard-size {
-    width: 100%;
-  }
-
-  .subheader {
+/* Responsive Navigation - Mobile */
+@media (max-width: 768px) {
+  .nav-container {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .subheader-right {
-    text-align: left;
-    margin-top: 0.5rem;
+  .nav-links {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    background: #333;
+    width: 100%;
+    transition: max-height 0.3s ease-out;
   }
 
-  .timeline-block img {
-    aspect-ratio: 16 / 9;
+  .nav-links.active {
+    max-height: 1000px; /* enough to show all links */
   }
 
-  .evo-calendar .calendar-header h2 {
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-.evo-calendar .calendar-events .event-header {
-  font-weight: 700;
-  font-size: 1rem;
-}
-.evo-calendar .event-description a {
-  word-break: break-word;
-  display: inline-block;
-  margin-top: 0.3em;
-  color: #00bcd4; /* or another link color */
-  text-decoration: underline;
-}
-.calendar-container {
-  max-width: 600px;  /* or 500px, or 400px — whatever size you like */
-  margin: 2rem auto; /* centers it horizontally with space above/below */
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  overflow: hidden;  /* keeps corners rounded */
+  .hamburger {
+    display: block;
+  }
 }
