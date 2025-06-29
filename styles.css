@@ -44,6 +44,12 @@ header {
   padding: 3rem 1rem;
   z-index: 1;
 }
+nav {
+  margin-bottom: 1em;
+}
+nav {
+  margin-bottom: 1em;
+}
 
 header::before {
   content: "";
