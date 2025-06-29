@@ -277,22 +277,9 @@ footer {
 /* ===== NAVIGATION STYLES ===== */
 
 /* Desktop styles (default) */
-.nav-links {
-  display: flex;
-  gap: 1em;
-  list-style: none;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5em;
-  display: block;
-}
-
 /* Hamburger hidden by default */
 .hamburger {
-  display: none;
+  display: block;
 }
 
 /* Nav container styling */
