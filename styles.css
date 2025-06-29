@@ -125,6 +125,11 @@ nav {
   .hamburger {
     display: block;
   }
+  .content-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1em;
+}
 
 /* Main Content */
 main {
