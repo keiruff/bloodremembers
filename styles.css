@@ -73,7 +73,7 @@ header p {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   background: #333;
   color: white;
   padding: 0.5em;
