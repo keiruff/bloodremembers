@@ -86,12 +86,6 @@ nav {
   padding: 0.5em;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -103,6 +97,12 @@ nav {
   text-decoration: none;
   padding: 0.5em;
   display: block;
+}
+
+.nav-container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hamburger {
