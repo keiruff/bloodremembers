@@ -302,7 +302,7 @@ nav {
   }
 }
   .nav-links {
-    display: none;
+    display: flex;
     flex-direction: column;
     background: #333;
     width: 100%;
