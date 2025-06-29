@@ -79,18 +79,17 @@ header p {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
-/* Basic nav styles */
-nav {
-  background: #333;
-  color: white;
-  padding: 0.5em;
+/* Desktop nav styles */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-links {
-  display: none;
-  flex-direction: column;
-  background: #333;
-  width: 100%;
+  list-style: none;
+  display: flex;
+  gap: 1em;
 }
 
 .nav-links li a {
@@ -100,43 +99,34 @@ nav {
   display: block;
 }
 
-.nav-container {
-  flex-direction: column;
-  align-items: flex-start; /* or center if you want center */
-}
-
-.nav-links.active {
-  display: flex
-
 .hamburger {
-  display: block;
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
 /* Mobile styles */
 @media (max-width: 600px) {
   .nav-container {
     flex-direction: column;
-    align-items: flex-start; /* or center if you prefer */
+    align-items: flex-start; /* Or center if you prefer */
   }
-}
-@media (max-width: 600px) {
+
   .nav-links {
     display: none;
     flex-direction: column;
     background: #333;
     width: 100%;
   }
+
   .nav-links.active {
     display: flex;
   }
+
   .hamburger {
     display: block;
   }
-  .content-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1em;
-}
+ }
 
 /* Main Content */
 main {
