@@ -87,9 +87,10 @@ nav {
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1em;
+  display: none;
+  flex-direction: column;
+  background: #333;
+  width: 100%;
 }
 
 .nav-links li a {
@@ -99,12 +100,16 @@ nav {
   display: block;
 }
 
+.nav-container {
+  flex-direction: column;
+  align-items: flex-start; /* or center if you want center */
+}
 
+.nav-links.active {
+  display: flex
 
 .hamburger {
-  display: none;
-  font-size: 1.5em;
-  cursor: pointer;
+  display: block;
 }
 
 /* Mobile styles */
