@@ -322,4 +322,11 @@ nav {
   .nav-links.active {
     display: flex;
   }
+.nav-container {
+    justify-content: flex-start;
+  }
+  
+.nav-links {
+    margin-top: 0.5em;
+  }
 }
