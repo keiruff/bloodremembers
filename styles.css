@@ -280,6 +280,17 @@ footer {
   display: none;
 }
 
+/* Base nav styles for desktop */
+.nav-links {
+  display: flex;
+  gap: 1em;
+}
+
+/* Hide hamburger by default */
+.hamburger {
+  display: none;
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
   .hamburger {
