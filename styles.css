@@ -286,7 +286,7 @@ footer {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
 }
 
 /* Nav bar background and padding */
