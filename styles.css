@@ -269,26 +269,39 @@ footer {
   margin-top: 2rem;
 }
 
-/* Base nav styles for desktop */
+/* ===== NAVIGATION STYLES ===== */
+
+/* Desktop styles (default) */
 .nav-links {
   display: flex;
   gap: 1em;
+  list-style: none;
 }
 
-/* Hide hamburger by default */
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  display: block;
+}
+
+/* Hamburger hidden by default */
 .hamburger {
   display: none;
 }
 
-/* Base nav styles for desktop */
-.nav-links {
+/* Nav container styling */
+.nav-container {
   display: flex;
-  gap: 1em;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Hide hamburger by default */
-.hamburger {
-  display: none;
+/* Nav bar background and padding */
+nav {
+  background: #333;
+  color: white;
+  padding: 0.5em;
 }
 
 /* Mobile styles */
@@ -298,12 +311,14 @@ footer {
     font-size: 1.5em;
     cursor: pointer;
   }
+
   .nav-links {
     display: none;
     flex-direction: column;
     background: #333;
     width: 100%;
   }
+
   .nav-links.active {
     display: flex;
   }
