@@ -300,13 +300,11 @@ nav {
   .hamburger {
     display: block;
   }
+.nav-links {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-start; /* <--- THIS aligns links to the left */
 }
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    background: #333;
-    width: 100%;
-  }
 
   .nav-links.active {
     display: flex;
