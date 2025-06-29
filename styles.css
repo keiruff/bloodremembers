@@ -277,13 +277,12 @@ footer {
   }
 
   .nav-links {
-  display: none;
-  flex-direction: column;
-  background: #333;
-  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 .nav-links.active {
-  display: flex;
+  max-height: 3000px;
 }
 
   .hamburger {
