@@ -310,6 +310,11 @@ nav {
 }
 
 /* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
   .nav-links {
     display: none;
     flex-direction: column;
