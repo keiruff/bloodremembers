@@ -277,17 +277,14 @@ footer {
   }
 
   .nav-links {
-    max-height: 0;
-    overflow: hidden;
-    flex-direction: column;
-    background: #333;
-    width: 100%;
-    transition: max-height 0.3s ease-out;
-  }
-
-  .nav-links.active {
-    max-height: 1000px; /* enough to show all links */
-  }
+  display: none;
+  flex-direction: column;
+  background: #333;
+  width: 100%;
+}
+.nav-links.active {
+  display: flex;
+}
 
   .hamburger {
     display: block;
