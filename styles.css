@@ -285,8 +285,7 @@ footer {
 /* Nav container styling */
 .nav-container {
   display: flex;
-  justify-content: space-between;
-  align-items: left;
+  justify-content: flex-start;
 }
 
 /* Nav bar background and padding */
