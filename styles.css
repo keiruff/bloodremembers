@@ -80,9 +80,14 @@ header p {
 }
 
 .nav-links {
-  list-style: none;
+  display: none;
+  flex-direction: column;
+  background: #333;
+  width: 100%;
+}
+
+.nav-links.active {
   display: flex;
-  gap: 1em;
 }
 
 .nav-links li a {
@@ -93,7 +98,7 @@ header p {
 }
 
 .hamburger {
-  display: none;
+  display: block;
   font-size: 1.5em;
   cursor: pointer;
   padding: 0.5em;
@@ -305,13 +310,6 @@ nav {
 }
 
 /* Mobile styles */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    font-size: 1.5em;
-    cursor: pointer;
-  }
-
   .nav-links {
     display: none;
     flex-direction: column;
