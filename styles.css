@@ -269,23 +269,31 @@ footer {
   margin-top: 2rem;
 }
 
-/* Responsive Navigation - Mobile */
+/* Base nav styles for desktop */
+.nav-links {
+  display: flex;
+  gap: 1em;
+}
+
+/* Hide hamburger by default */
+.hamburger {
+  display: none;
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-}
-.nav-links.active {
-  max-height: 3000px;
-}
-
   .hamburger {
     display: block;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    width: 100%;
+  }
+  .nav-links.active {
+    display: flex;
   }
 }
