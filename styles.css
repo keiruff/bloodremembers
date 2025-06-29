@@ -120,7 +120,7 @@ header p {
   }
 
   .nav-links.active {
-    display: flex;
+    max-height: 900px;
   }
 
   .hamburger {
