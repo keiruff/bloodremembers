@@ -72,7 +72,7 @@ header p {
 /* Navigation - Desktop */
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: left;
   background: #333;
   color: white;
