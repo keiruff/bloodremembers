@@ -260,7 +260,6 @@ nav {
   flex-direction: column;
   background: #333;
   width: 100%;
-  left: 0;
 }
 
 /* Nav links styling */
@@ -282,4 +281,5 @@ nav {
 /* Nav shown when active */
 .nav-links.active {
   display: flex;
+  left: 0;
 }
