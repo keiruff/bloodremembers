@@ -260,13 +260,14 @@ nav {
   flex-direction: column;
   background: #333;
   width: 100%;
+  left: 0;
 }
 
 /* Nav links styling */
 .nav-links li a {
   color: white;
   text-decoration: none;
-  padding: 0.15em;
+  padding: 0.35em;
   display: block;
 }
 
