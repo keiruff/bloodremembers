@@ -251,7 +251,8 @@ footer {
 nav {
   background: #333;
   color: white;
-  padding: 0.3em;
+  padding: 0.5em;
+  padding-left: 0;
 }
 
 /* Nav links - hidden by default */
@@ -260,7 +261,6 @@ nav {
   flex-direction: column;
   background: #333;
   width: 100%;
-  padding-left: 0;
   list-style: none;
 }
 
@@ -277,7 +277,7 @@ nav {
   display: block;
   font-size: 1.5em;
   cursor: pointer;
-  padding: 0.3em;
+  padding: 0.5em;
 }
 
 /* Nav shown when active */
