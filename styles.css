@@ -245,7 +245,6 @@ footer {
 .nav-container {
   display: flex;
   align-items: left;
-  text-align: left;
 }
 
 /* Nav bar background and padding */
@@ -261,6 +260,8 @@ nav {
   flex-direction: column;
   background: #333;
   width: 100%;
+  text-align: left;
+  padding-left: 0;
 }
 
 /* Nav links styling */
