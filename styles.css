@@ -241,16 +241,11 @@ footer {
 
 /* ===== NAVIGATION STYLES ===== */
 
-/* Desktop styles (default) */
-/* Hamburger hidden by default */
-.hamburger {
-  display: block;
-}
-
-/* Nav container styling */
+/* Nav container */
 .nav-container {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 /* Nav bar background and padding */
@@ -260,39 +255,14 @@ nav {
   padding: 0.5em;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-  .hamburger {
-  display: block;
-  font-size: 1.5em;
-  cursor: pointer;
-  padding: 0.5em;
-}
-
-/* Navigation - Desktop */
-.nav-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: left;
-  background: #333;
-  color: white;
-  padding: 0.5em;
-}
-
+/* Nav links - desktop default */
 .nav-links {
-  display: none;
-  flex-direction: column;
-  background: #333;
-  width: 100%;
-  gap: 1em;
-  margin-top: 0.5em;
-  justify-content: flex-start; /* <--- THIS aligns links to the left */
-}
-
-.nav-links.active {
   display: flex;
+  gap: 1em;
+  list-style: none;
 }
 
+/* Nav links styling */
 .nav-links li a {
   color: white;
   text-decoration: none;
@@ -300,9 +270,28 @@ nav {
   display: block;
 }
 
+/* Hamburger hidden by default */
 .hamburger {
-  display: block;
-  font-size: 1.5em;
-  cursor: pointer;
-  padding: 0.5em;
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0.5em;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
 }
