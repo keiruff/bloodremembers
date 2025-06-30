@@ -244,7 +244,6 @@ footer {
 /* Nav container */
 .nav-container {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 
@@ -255,43 +254,31 @@ nav {
   padding: 0.5em;
 }
 
-/* Nav links - desktop default */
+/* Nav links - hidden by default */
 .nav-links {
-  display: flex;
-  gap: 1em;
-  list-style: none;
+  display: none;
+  flex-direction: column;
+  background: #333;
+  width: 100%;
 }
 
 /* Nav links styling */
 .nav-links li a {
   color: white;
   text-decoration: none;
-  padding: 0.5em;
+  padding: 0.75em;
   display: block;
 }
 
-/* Hamburger hidden by default */
+/* Hamburger always visible */
 .hamburger {
-  display: none;
+  display: block;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0.5em;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    font-size: 1.5em;
-    cursor: pointer;
-    padding: 0.5em;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #333;
-    width: 100%;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
+/* Nav shown when active */
+.nav-links.active {
+  display: flex;
 }
