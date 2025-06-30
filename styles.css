@@ -1,21 +1,18 @@
-/* ============================
-   RESET & BODY
-============================ */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff8f6;
   color: #222;
 }
 
-/* ============================
-   SUBHEADER
-============================ */
+/* Subheader */
 .subheader {
   display: flex;
   justify-content: space-between;
@@ -38,9 +35,7 @@ body {
   text-align: right;
 }
 
-/* ============================
-   HEADER
-============================ */
+/* Header */
 header {
   position: relative;
   background: url('images/slavetrade-map.jpg') center/cover no-repeat;
@@ -74,67 +69,7 @@ header p {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
-/* ============================
-   NAVIGATION
-============================ */
-/* Nav container */
-.nav-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-/* Nav bar background and padding */
-nav {
-  background: #333;
-  color: white;
-  padding: 0.5em;
-}
-
-/* Nav links - default desktop */
-.nav-links {
-  display: flex;
-  gap: 1em;
-  list-style: none;
-}
-
-/* Nav links styling */
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5em;
-  display: block;
-}
-
-/* Hamburger hidden by default */
-.hamburger {
-  display: none;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    font-size: 1.5em;
-    cursor: pointer;
-    padding: 0.5em;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #333;
-    width: 100%;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-}
-
-/* ============================
-   MAIN CONTENT
-============================ */
+/* Main Content */
 main {
   max-width: 900px;
   margin: 2rem auto;
@@ -156,4 +91,194 @@ section p {
 
 /* Headings */
 h1, h2, h3 {
-  color: #8000
+  color: #800000;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1.2em;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.cta-button,
+.button {
+  display: inline-block;
+  background-color: #800000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem auto;
+}
+
+.cta-button:hover,
+.button:hover {
+  background-color: #a30000;
+}
+
+/* Mission Box */
+.mission-box {
+  background: url('images/paper-texture.png') center/cover repeat;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 750px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #800000;
+  animation: fadeIn 1.2s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: forwards;
+}
+
+.mission-box::before {
+  content: "\1F56F";
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #800000;
+}
+
+.mission-box h2 {
+  margin-bottom: 1rem;
+  color: #800000;
+  font-size: 2rem;
+}
+
+.mission-box p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: center;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Timeline */
+.timeline-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.timeline-entry {
+  border-left: 4px solid #800000;
+  margin: 2rem 0;
+  padding-left: 1rem;
+}
+
+.timeline-entry h3 {
+  color: #800000;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-entry figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.timeline-block img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-entry figcaption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Utilities */
+ul {
+  list-style-position: outside;
+  padding-left: 1.2rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+.intro {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* ===== NAVIGATION STYLES ===== */
+
+/* Desktop styles (default) */
+/* Hamburger hidden by default */
+.hamburger {
+  display: block;
+}
+
+/* Nav container styling */
+.nav-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Nav bar background and padding */
+nav {
+  background: #333;
+  color: white;
+  padding: 0.5em;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+.nav-links {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-start; /* <--- THIS aligns links to the left */
+}
+
+  .nav-links.active {
+    display: flex;
+  }
+.nav-container {
+    justify-content: flex-start;
+  }
+  
+.nav-links {
+    margin-top: 0.5em;
+  }
+}
