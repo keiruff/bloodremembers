@@ -69,41 +69,6 @@ header p {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
-/* Navigation - Desktop */
-.nav-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: left;
-  background: #333;
-  color: white;
-  padding: 0.5em;
-}
-
-.nav-links {
-  display: none;
-  flex-direction: column;
-  background: #333;
-  width: 100%;
-}
-
-.nav-links.active {
-  display: flex;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5em;
-  display: block;
-}
-
-.hamburger {
-  display: block;
-  font-size: 1.5em;
-  cursor: pointer;
-  padding: 0.5em;
-}
-
 /* Main Content */
 main {
   max-width: 900px;
@@ -298,22 +263,46 @@ nav {
 /* Mobile styles */
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
-  }
-.nav-links {
+  display: block;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+/* Navigation - Desktop */
+.nav-container {
   display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  background: #333;
+  color: white;
+  padding: 0.5em;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background: #333;
+  width: 100%;
   gap: 1em;
+  margin-top: 0.5em;
   justify-content: flex-start; /* <--- THIS aligns links to the left */
 }
 
-  .nav-links.active {
-    display: flex;
-  }
-.nav-container {
-    justify-content: flex-start;
-  }
-  
-.nav-links {
-    margin-top: 0.5em;
-  }
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  display: block;
+}
+
+.hamburger {
+  display: block;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0.5em;
 }
