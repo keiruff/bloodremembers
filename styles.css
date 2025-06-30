@@ -260,6 +260,7 @@ nav {
   flex-direction: column;
   background: #333;
   width: 100%;
+  text-align: center;
 }
 
 /* Nav links styling */
