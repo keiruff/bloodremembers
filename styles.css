@@ -263,7 +263,7 @@ nav {
     list-style: none;
     gap: 1em;
     justify-content: flex-start; /* <--- THIS aligns links to the left */
-    left: 0
+    position: absolute;
   }
 
 /* Nav links styling */
