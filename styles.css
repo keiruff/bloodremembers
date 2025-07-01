@@ -257,6 +257,7 @@ nav {
 /* Nav links - hidden by default */
   .nav-links {
     display: none;
+    flex-direction: column;
     background: #333;
     width: 100%;
     list-style: none;
