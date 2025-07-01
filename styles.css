@@ -261,7 +261,8 @@ nav {
     background: #333;
     width: 100%;
     list-style: none;
-    padding: 0.5em;
+    gap: 1em;
+    justify-content: flex-start; /* <--- THIS aligns links to the left */
   }
 
 /* Nav links styling */
