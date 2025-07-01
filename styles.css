@@ -245,7 +245,7 @@ footer {
 .nav-container {
   display: flex;
   align-items: left;
-  padding-left: 0;
+  position: fixed;
 }
 
 /* Nav bar background and padding */
