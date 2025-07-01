@@ -275,7 +275,6 @@ nav {
 }
 
 /* Hamburger always visible */
-@media (max-width: 900px) {
 .hamburger {
   display: block;
   font-size: 1.5em;
@@ -286,5 +285,4 @@ nav {
 /* Nav shown when active */
 .nav-links.active {
   display: flex;
-}
 }
