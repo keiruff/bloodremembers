@@ -261,7 +261,7 @@ nav {
     background: #333;
     width: 100%;
     list-style: none;
-    padding: 0;
+    padding: 0.5;
   }
 
 /* Nav links styling */
@@ -270,7 +270,7 @@ nav {
   color: white;
   text-decoration: none;
   padding: 0;
-  display: block;
+  display: flex;
   text-align: left;
 }
 
