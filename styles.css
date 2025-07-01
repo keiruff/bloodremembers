@@ -255,21 +255,26 @@ nav {
 }
 
 /* Nav links - hidden by default */
-.nav-links {
-  display: none;
-  flex-direction: column;
-  background: #333;
-  width: 100%;
-  padding-left: 0;
-  list-style: none;
-}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
 
 /* Nav links styling */
+.nav {
+  text-align: left
+  
 .nav-links li a {
   color: white;
   text-decoration: none;
-  padding: 0.35em;
+  padding: 0.75em 1em;
   display: block;
+  text-align: left;
 }
 
 /* Hamburger always visible */
