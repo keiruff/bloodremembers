@@ -270,7 +270,7 @@ nav {
 .nav-links li a {
   color: white;
   text-decoration: none;
-  padding: 0.75em 1em;
+  padding: 0.75em;
   display: block;
   text-align: left;
 }
